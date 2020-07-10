@@ -13,7 +13,7 @@ Education
 ======
 * The University of Chicago, 2020
   * B.S. with Honors in Mathematics
-  * B.S. with Honors in Computer Science
+  * B.S. with Honors in Computer Science <br/>
     * with Specialization in Machine Learning
   * B.A. in Statistics
 
