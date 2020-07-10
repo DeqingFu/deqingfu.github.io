@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Deqing Fu"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "Master Student at the University of Chicago, Department of Statistics"
   location         : "Chicago, IL"
   employer         :
   pubmed           : 
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "github.com/DeqingFu"
+  github           : "https://github.com/DeqingFu"
   google_plus      :
   keybase          :
   instagram        :
