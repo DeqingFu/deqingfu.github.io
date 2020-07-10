@@ -1,13 +1,11 @@
 # Authors
 
 Name Name:
-  name        : "Name Name"
-  uri         : "http://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
+  name        : "Deqing Fu"
+  uri         : "deqingfu.github.io"
+  email       : "DEQING at UCHICAGO dot EDU"
+  bio         : "Master student at the University of Chicago, Department of Statistics"
   avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
 
 Name2 Name2:
   name        : "Name2 Name2"
