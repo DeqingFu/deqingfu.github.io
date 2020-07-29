@@ -8,4 +8,6 @@ redirect_from:
   - /about.html
 ---
 
+Hi! I'm a M.S. student at the University of Chicago, Department of Statistics. Here is my [CV](/_docs/cv.pdf)
+
 
