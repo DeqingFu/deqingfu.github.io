@@ -8,6 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I'm a M.S. student at the University of Chicago, Department of Statistics. Here is my [CV](/_docs/cv.pdf)
+I'm a M.S. student in the Department of Statistics at the University of Chicago. Here is my [CV](/_docs/cv.pdf) and my [LinkedIn](https://www.linkedin.com/in/deqing-fu-373b71130/) profile. Before that, I was an undergraduate student at the College, the University of Chicago, majoring in Mathematics (with Honors), Computer Science (with Honors) with the specialization in Machine Learning, and Statistics. 
 
 
