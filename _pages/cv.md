@@ -9,10 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
-### [Here](/_docs/cv.pdf) is a detailed pdf version.
+[Here](/_docs/cv.pdf) is a detailed pdf version.
 
-Education
-======
+## Education
 * The University of Chicago, 2020
   * B.S. with Honors in Mathematics
   * B.S. with Honors in Computer Science <br/>
@@ -22,8 +21,7 @@ Education
 * The University of Chicago, 2022 (expected)
   * M.S. in Statistics
 
-Work experience
-======
+## Work experience
 * Jan 2019 - Current: Research Assistant
   * University of chicago, Department of Computer Science
   * Topics: Computer Vision
