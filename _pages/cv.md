@@ -22,8 +22,13 @@ redirect_from:
   * M.S. in Statistics
 
 ## Work experience
+* Sep 2020 - Current: Junior Machine Learning Developer & Research Assistant
+  * University of Chicago, Salavon Studio & Computation Institute
+  * Topics: Generative Adverserial Networks (GANs)
+  * Supervisor: [Jason Salavon](http://salavon.com/page/contact-representation/)
+
 * Jan 2019 - Current: Research Assistant
-  * University of chicago, Department of Computer Science
+  * University of Chicago, Department of Computer Science
   * Topics: Computer Vision
     * Amodal Instance Segmentation
     * Figure/Ground Embedding
