@@ -21,7 +21,7 @@ redirect_from:
 * The University of Chicago, 2022 (expected)
   * M.S. in Statistics
 
-## Work experience
+## Experience
 * Sep 2020 - Current: Junior Machine Learning Developer & Research Assistant
   * University of Chicago, Salavon Studio & Computation Institute
   * Topics: Generative Adverserial Networks (GANs)
