@@ -22,6 +22,13 @@ redirect_from:
   * M.S. in Statistics
 
 ## Experience
+* Dec 2020 - Current: Research Assistant
+  * University of Chicago, Department of Statistics
+  * Topics: 
+    * Time-Aware Machine Intelligence
+    * Deep Learning Theory
+  * Supervisors: [Lek-Heng Lim](https://www.stat.uchicago.edu/~lekheng/), [Bradley Nelson](https://bnels.github.io)
+
 * Sep 2020 - Current: Junior Machine Learning Developer & Research Assistant
   * University of Chicago, Salavon Studio & Computation Institute
   * Topics: Generative Adverserial Networks (GANs)
