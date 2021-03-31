@@ -29,7 +29,7 @@ redirect_from:
     * Deep Learning Theory
   * Supervisors: [Lek-Heng Lim](https://www.stat.uchicago.edu/~lekheng/), [Bradley Nelson](https://bnels.github.io)
 
-* Sep 2020 - Current: Junior Machine Learning Developer & Research Assistant
+* Sep 2020 - Mar 2021: Junior Machine Learning Developer & Research Assistant
   * University of Chicago, Salavon Studio & Computation Institute
   * Topics: Generative Adverserial Networks (GANs)
   * Supervisor: [Jason Salavon](http://salavon.com/page/contact-representation/)
