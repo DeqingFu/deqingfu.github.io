@@ -22,6 +22,9 @@ redirect_from:
   * M.S. in Statistics
 
 ## Experience
+* Jun 2021 - Sep 2021: Software Engineer Intern
+  * Google 
+  
 * Dec 2020 - Current: Research Assistant
   * University of Chicago, Department of Statistics
   * Topics: 
