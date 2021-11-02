@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-[Here](/_docs/cv_deqing.pdf) is a detailed pdf version.
+[Here](/_docs/cv.pdf) is a detailed pdf version.
 
 ## Education
 * The University of Chicago, 2020
