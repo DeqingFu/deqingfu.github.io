@@ -24,6 +24,7 @@ redirect_from:
 ## Experience
 * Jun 2021 - Sep 2021: Software Engineer Intern
   * Google 
+  * Duties includes: Image Clustering and Deduplication 
   
 * Dec 2020 - Current: Research Assistant
   * University of Chicago, Department of Statistics
