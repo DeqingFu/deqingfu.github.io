@@ -8,7 +8,6 @@ venue: 'International Conference on Computer Vision (ICCV) 2021'
 #paperurl: 'https://openaccess.thecvf.com/content/ICCV2021/papers/Nederhood_Harnessing_the_Conditioning_Sensorium_for_Improved_Image_Translation_ICCV_2021_paper.pdf'
 #citation: 'Nederhood, Cooper, Nicholas I. Kolkin, Deqing Fu and Jason Salavon. “Harnessing the Conditioning Sensorium for Improved Image Translation.” ArXiv abs/2110.06443 (2021): n. pag.'
 ---
-
-[pdf](https://openaccess.thecvf.com/content/ICCV2021/papers/Nederhood_Harnessing_the_Conditioning_Sensorium_for_Improved_Image_Translation_ICCV_2021_paper.pdf)
+[Download Paper Here](https://openaccess.thecvf.com/content/ICCV2021/papers/Nederhood_Harnessing_the_Conditioning_Sensorium_for_Improved_Image_Translation_ICCV_2021_paper.pdf)
 
 Nederhood, Cooper, Nicholas I. Kolkin, Deqing Fu and Jason Salavon. “Harnessing the Conditioning Sensorium for Improved Image Translation.” ArXiv abs/2110.06443 (2021): n. pag.
