@@ -8,6 +8,6 @@ venue: 'arXiv'
 #paperurl: 'https://arxiv.org/pdf/2111.10984.pdf'
 #citation: 'Deqing Fu, Bradley J. Nelson. “Topological Regularization for Dense Prediction”. ArXiv abs/2111.10984 (2021): n. pag.'
 ---
-[Download Paper Here](https://arxiv.org/pdf/2111.10984.pdf)
+[Download Paper Here](/_docs/Topological_Regularization_for_Dense_Prediction.pdf)
 
 Deqing Fu, Bradley J. Nelson. “Topological Regularization for Dense Prediction”. ArXiv abs/2111.10984 (2021): n. pag.
