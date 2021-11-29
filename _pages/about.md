@@ -31,6 +31,7 @@ I have a broad interest in machine learning and deep learning. My interested inc
 
 * The University of Chicago, 2022 (expected)
   * M.S. in Statistics
+    * Thesis Advisor: [Dr. Bradley J. Nelson](https://bnels.github.io) and [Prof. Lek-Heng Lim](https://www.stat.uchicago.edu/~lekheng/)
 
 ### Honors and Awards
 Susanne H. Rudolph Scholarship \
