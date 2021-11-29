@@ -15,14 +15,14 @@ Before that, I was an undergraduate student at the College, the University of Ch
 
 I have a broad interest in machine learning and deep learning. My interested includes, but not limited to, deep learning theory, representation learning, topological data analysis, spectral methods, and deep generative models.
 
-#### [Publication](/_pages/publications.md)
+### Publication
 \[1\]	**Deqing Fu**, Bradley Nelson. *[Topological Regularization for Dense Prediction](https://arxiv.org/pdf/2111.10984.pdf)*. In Submission. arXiv: 2111.10984
 
 \[2\]	Cooper Nederhood, Nicholas Kolkin, **Deqing Fu**, Jason Salavon. *[Harnessing the Conditioning Sensorium for Improved Image Translation](https://openaccess.thecvf.com/content/ICCV2021/papers/Nederhood_Harnessing_the_Conditioning_Sensorium_for_Improved_Image_Translation_ICCV_2021_paper.pdf)*. International Conference on Computer Vision (ICCV), 2021
 
 \[3\]	Sri Hari Krishna Narayanan, Paul Hovland, Kshitij Kulshreshtha, Devashri Nagarkar, Kaitlyn MacIntyre, Riley Wagner, **Deqing Fu**. *[Comparison of Two Gradient Computation Methods in Python](https://openreview.net/pdf?id=r1K7G7GRW)*. Neural Information Processing Systems (NIPS) Autodiff Workshop, 2017
 
-#### Education
+### Education
 * The University of Chicago, 2020
   * B.S. with Honors in Mathematics
   * B.S. with Honors in Computer Science <br/>
@@ -32,9 +32,9 @@ I have a broad interest in machine learning and deep learning. My interested inc
 * The University of Chicago, 2022 (expected)
   * M.S. in Statistics
 
-#### Honors and Awards
-Susanne H. Rudolph Scholarship 
-Liew Family College Research Fellows Fund ($5,000)
+### Honors and Awards
+Susanne H. Rudolph Scholarship \
+Liew Family College Research Fellows Fund ($5,000) \
 Dean’s List 2016-2020
 
 #### Links
