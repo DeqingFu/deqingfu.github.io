@@ -23,15 +23,18 @@ I have a broad interest in machine learning and deep learning. My interested inc
 \[3\]	Sri Hari Krishna Narayanan, Paul Hovland, Kshitij Kulshreshtha, Devashri Nagarkar, Kaitlyn MacIntyre, Riley Wagner, **Deqing Fu**. *[Comparison of Two Gradient Computation Methods in Python](https://openreview.net/pdf?id=r1K7G7GRW)*. Neural Information Processing Systems (NIPS) Autodiff Workshop, 2017
 
 ### Education
+* The University of Chicago, 2022 
+  * M.S. in Statistics
+    * Thesis Advisor: [Dr. Bradley J. Nelson](https://bnels.github.io) and [Prof. Lek-Heng Lim](https://www.stat.uchicago.edu/~lekheng/)
+    * Thesis: [Topological Regularization in Deep Learning](/_docs/ms_thesis.pdf)
+
 * The University of Chicago, 2020
   * B.S. with Honors in Mathematics
   * B.S. with Honors in Computer Science <br/>
     * with Specialization in Machine Learning
   * B.A. in Statistics
 
-* The University of Chicago, 2022 (expected)
-  * M.S. in Statistics
-    * Thesis Advisor: [Dr. Bradley J. Nelson](https://bnels.github.io) and [Prof. Lek-Heng Lim](https://www.stat.uchicago.edu/~lekheng/)
+
 
 ### Honors and Awards
 Susanne H. Rudolph Scholarship \

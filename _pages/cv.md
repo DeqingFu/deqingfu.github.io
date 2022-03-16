@@ -12,21 +12,23 @@ redirect_from:
 [Here](/_docs/cv.pdf) is a detailed pdf version.
 
 ## Education
+* The University of Chicago, 2022
+  * M.S. in Statistics
+  
 * The University of Chicago, 2020
   * B.S. with Honors in Mathematics
   * B.S. with Honors in Computer Science <br/>
     * with Specialization in Machine Learning
   * B.A. in Statistics
 
-* The University of Chicago, 2022 (expected)
-  * M.S. in Statistics
+
 
 ## Experience
 * Jun 2021 - Sep 2021: Software Engineer Intern
   * Google 
   * Duties includes: Image Clustering and Deduplication 
   
-* Dec 2020 - Current: Research Assistant
+* Dec 2020 - Mar 2022: Research Assistant
   * University of Chicago, Department of Statistics
   * Topics: 
     * Time-Aware Machine Intelligence
@@ -38,7 +40,7 @@ redirect_from:
   * Topics: Generative Adverserial Networks (GANs)
   * Supervisor: [Jason Salavon](http://salavon.com/page/contact-representation/)
 
-* Jan 2019 - Current: Research Assistant
+* Jan 2019 - Mar 2022: Research Assistant
   * University of Chicago, Department of Computer Science
   * Topics: Computer Vision
     * Amodal Instance Segmentation
