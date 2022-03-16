@@ -76,7 +76,7 @@ analytics:
   provider               :  "google"
   #provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :  "G-307221144"
+    tracking_id          :  "G-C0YTE7PZ8N"
     #tracking_id          :  "UA-175229355-1"
 
 
