@@ -9,13 +9,16 @@ redirect_from:
 
 {% include base_path %}
 
-[Here](/_docs/cv.pdf) is a detailed pdf version.
+[Here](/_docs/cv_2022.pdf) is a detailed pdf version.
 
 ## Education
-* The University of Chicago, 2022
+* University of Southern California, 2022-2027 (expected)
+  * Ph.D. in Computer Science
+
+* University of Chicago, 2022
   * M.S. in Statistics
   
-* The University of Chicago, 2020
+* University of Chicago, 2020
   * B.S. with Honors in Mathematics
   * B.S. with Honors in Computer Science <br/>
     * with Specialization in Machine Learning
