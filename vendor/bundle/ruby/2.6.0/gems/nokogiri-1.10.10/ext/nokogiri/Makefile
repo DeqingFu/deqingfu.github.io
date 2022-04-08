@@ -12,9 +12,9 @@ NULLCMD = :
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0
+topdir = /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0
 hdrdir = $(topdir)
-arch_hdrdir = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin19
+arch_hdrdir = /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin21
 PATH_SEPARATOR = :
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
 prefix = $(DESTDIR)/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr
@@ -31,8 +31,8 @@ rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendordir = $(rubylibprefix)/vendor_ruby
-sitearchdir = $(DESTDIR)./.gem.20200730-54079-15ceshu
-sitelibdir = $(DESTDIR)./.gem.20200730-54079-15ceshu
+sitearchdir = $(DESTDIR)./.gem.20220408-46098-1yww8hb
+sitelibdir = $(DESTDIR)./.gem.20220408-46098-1yww8hb
 sitedir = $(DESTDIR)/Library/Ruby/Site
 rubyarchdir = $(rubylibdir)/$(arch)
 rubylibdir = $(rubylibprefix)/$(ruby_version)
@@ -51,7 +51,8 @@ htmldir = $(docdir)
 infodir = $(DESTDIR)/usr/share/info
 docdir = $(datarootdir)/doc/$(PACKAGE)
 oldincludedir = $(DESTDIR)/usr/include
-includedir = $(DESTDIR)/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk$(prefix)/include
+includedir = $(DESTDIR)/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk$(prefix)/include
+runstatedir = $(localstatedir)/run
 localstatedir = $(prefix)/var
 sharedstatedir = $(prefix)/com
 sysconfdir = $(DESTDIR)/Library/Ruby/Site
@@ -83,14 +84,14 @@ debugflags = -g
 warnflags = 
 cppflags = 
 CCDLFLAGS = 
-CFLAGS   = $(CCDLFLAGS)  -g -Os -pipe -DHAVE_GCC_ATOMIC_BUILTINS  -I /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libxml2 -DNOKOGIRI_USE_PACKAGED_LIBRARIES $(ARCH_FLAG)
+CFLAGS   = $(CCDLFLAGS)  -g -Os -pipe -DHAVE_GCC_ATOMIC_BUILTINS -DUSE_FFI_CLOSURE_ALLOC  -I /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libxml2 -DNOKOGIRI_USE_PACKAGED_LIBRARIES $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
 DEFS     = 
-CPPFLAGS = -DHAVE_ICONV_H -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -I/Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin19/libxml2/2.9.10/include/libxml2 -I/Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin19/libxslt/1.1.34/include -I/Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin19/libxml2/2.9.10/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags) "-DNOKOGIRI_LIBXML2_PATH=\"/Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin19/libxml2/2.9.10\"" "-DNOKOGIRI_LIBXML2_PATCHES=\"0001-Revert-Do-not-URI-escape-in-server-side-includes.patch 0002-Remove-script-macro-support.patch 0003-Update-entities-to-remove-handling-of-ssi.patch 0004-libxml2.la-is-in-top_builddir.patch 0005-Fix-infinite-loop-in-xmlStringLenDecodeEntities.patch\"" "-DNOKOGIRI_LIBXSLT_PATH=\"/Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin19/libxslt/1.1.34\"" "-DNOKOGIRI_LIBXSLT_PATCHES=\"\""
+CPPFLAGS = -DHAVE_ICONV_H -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -I/Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin21/libxml2/2.9.10/include/libxml2 -I/Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin21/libxslt/1.1.34/include -I/Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin21/libxml2/2.9.10/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags) "-DNOKOGIRI_LIBXML2_PATH=\"/Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin21/libxml2/2.9.10\"" "-DNOKOGIRI_LIBXML2_PATCHES=\"0001-Revert-Do-not-URI-escape-in-server-side-includes.patch 0002-Remove-script-macro-support.patch 0003-Update-entities-to-remove-handling-of-ssi.patch 0004-libxml2.la-is-in-top_builddir.patch 0005-Fix-infinite-loop-in-xmlStringLenDecodeEntities.patch\"" "-DNOKOGIRI_LIBXSLT_PATH=\"/Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin21/libxslt/1.1.34\"" "-DNOKOGIRI_LIBXSLT_PATCHES=\"\""
 CXXFLAGS = $(CCDLFLAGS)  -g -Os -pipe  $(ARCH_FLAG)
-ldflags  = -L. -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.Internal.sdk/usr/local/lib
-dldflags = -arch x86_64             -undefined dynamic_lookup -multiply_defined suppress 
-ARCH_FLAG =  -arch x86_64
+ldflags  = -L. -L/AppleInternal/Library/BuildRoots/66382bca-8bca-11ec-aade-6613bcf0e2ee/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.Internal.sdk/usr/local/lib
+dldflags = $(ARCH_FLAG)             -undefined dynamic_lookup -multiply_defined suppress 
+ARCH_FLAG = 
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
 LDSHARED = $(CC) -dynamic -bundle
 LDSHAREDXX = $(CXX) -dynamic -bundle
@@ -104,7 +105,7 @@ RUBY_VERSION_NAME = $(RUBY_BASE_NAME)-$(ruby_version)
 RUBYW_BASE_NAME = rubyw
 RUBY_BASE_NAME = ruby
 
-arch = universal-darwin19
+arch = universal-darwin21
 sitearch = $(arch)
 ruby_version = 2.6.0
 ruby = $(bindir)/$(RUBY_BASE_NAME)
@@ -124,8 +125,8 @@ TOUCH = exit >
 #### End of system configuration section. ####
 
 preload = 
-libpath = . $(libdir) /Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin19/libxml2/2.9.10/lib /Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin19/libxslt/1.1.34/lib /usr/local/Cellar/xz/5.2.4/lib
-LIBPATH =  -L. -L$(libdir) -L/Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin19/libxml2/2.9.10/lib -L/Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin19/libxslt/1.1.34/lib -L/usr/local/Cellar/xz/5.2.4/lib
+libpath = . $(libdir) /Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin21/libxml2/2.9.10/lib /Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin21/libxslt/1.1.34/lib
+LIBPATH =  -L. -L$(libdir) -L/Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin21/libxml2/2.9.10/lib -L/Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin21/libxslt/1.1.34/lib
 DEFFILE = 
 
 CLEANFILES = mkmf.log
@@ -136,7 +137,7 @@ extout =
 extout_prefix = 
 target_prefix = /nokogiri
 LOCAL_LIBS = 
-LIBS = $(LIBRUBYARG_SHARED) /Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin19/libxslt/1.1.34/lib/libexslt.a -lm -liconv -lpthread -llzma -lz /Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin19/libxml2/2.9.10/lib/libxml2.a /Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin19/libxslt/1.1.34/lib/libxslt.a -lm -liconv -lpthread -llzma -lz /Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin19/libxml2/2.9.10/lib/libxml2.a -llzma   
+LIBS = $(LIBRUBYARG_SHARED) /Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin21/libxslt/1.1.34/lib/libexslt.a -lm -liconv -lpthread -lz /Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin21/libxml2/2.9.10/lib/libxml2.a /Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin21/libxslt/1.1.34/lib/libxslt.a -lm -liconv -lpthread -lz /Users/deqing/deqingfu.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-apple-darwin21/libxml2/2.9.10/lib/libxml2.a -llzma   
 ORIG_SRCS = html_document.c html_element_description.c html_entity_lookup.c html_sax_parser_context.c html_sax_push_parser.c nokogiri.c xml_attr.c xml_attribute_decl.c xml_cdata.c xml_comment.c xml_document.c xml_document_fragment.c xml_dtd.c xml_element_content.c xml_element_decl.c xml_encoding_handler.c xml_entity_decl.c xml_entity_reference.c xml_io.c xml_libxml2_hacks.c xml_namespace.c xml_node.c xml_node_set.c xml_processing_instruction.c xml_reader.c xml_relax_ng.c xml_sax_parser.c xml_sax_parser_context.c xml_sax_push_parser.c xml_schema.c xml_syntax_error.c xml_text.c xml_xpath_context.c xslt_stylesheet.c
 SRCS = $(ORIG_SRCS) 
 OBJS = html_document.o html_element_description.o html_entity_lookup.o html_sax_parser_context.o html_sax_push_parser.o nokogiri.o xml_attr.o xml_attribute_decl.o xml_cdata.o xml_comment.o xml_document.o xml_document_fragment.o xml_dtd.o xml_element_content.o xml_element_decl.o xml_encoding_handler.o xml_entity_decl.o xml_entity_reference.o xml_io.o xml_libxml2_hacks.o xml_namespace.o xml_node.o xml_node_set.o xml_processing_instruction.o xml_reader.o xml_relax_ng.o xml_sax_parser.o xml_sax_parser_context.o xml_sax_push_parser.o xml_schema.o xml_syntax_error.o xml_text.o xml_xpath_context.o xslt_stylesheet.o
