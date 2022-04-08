@@ -9,9 +9,9 @@ redirect_from:
 ---
 
 ### About
-I'm a M.S. student in the Department of Statistics at the University of Chicago. Here is my [CV](/_docs/cv.pdf). 
+I'll be a Ph.D. student in the Department of Computer Science, Viterbi School of Engineering at University of Southern California. Here is my [CV](/_docs/cv.pdf). 
 
-Before that, I was an undergraduate student at the College, the University of Chicago, majoring in Mathematics (with Honors), Computer Science (with Honors) with the specialization in Machine Learning, and Statistics. 
+Before that, I obtained my M.S. degree in the Statistics at the University of Chicago and I was also an undergraduate student at the College, the University of Chicago, majoring in Mathematics (with Honors), Computer Science (with Honors) with the specialization in Machine Learning, and Statistics. 
 
 I have a broad interest in machine learning and deep learning. My interested includes, but not limited to, deep learning theory, representation learning, topological data analysis, spectral methods, and deep generative models.
 
