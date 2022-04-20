@@ -24,13 +24,7 @@ redirect_from:
     * with Specialization in Machine Learning
   * B.A. in Statistics
 
-
-
-## Experience
-* Jun 2021 - Sep 2021: Software Engineer Intern
-  * Google 
-  * Duties includes: Image Clustering and Deduplication 
-  
+## Research Experience
 * Dec 2020 - Mar 2022: Research Assistant
   * University of Chicago, Department of Statistics
   * Topics: 
@@ -48,14 +42,22 @@ redirect_from:
   * Topics: Computer Vision
     * Amodal Instance Segmentation
     * Figure/Ground Embedding
-  * Supervisor: [Michael Maire](https://ttic.uchicago.edu/~mmaire/)
-
-* Jun 2018 - Aug 2018: Software Engineer Intern
-  * [Industrial Toys, Electronic Arts](https://www.ea.com/ea-studios/industrial-toys)
-  * Duties included: Implement game logics
+  * Supervisor: [Michael Maire](https://people.cs.uchicago.edu/~mmaire/)
 
 * Jun 2017 - Aug 2017: Summer Research Assistant
   * Argonne National Laboratory
   * Topic: Automatic Differentiation
   * Supervisors: [Paul Hovland](https://www.anl.gov/profile/paul-hovland) & [Sri Hari Krishna Narayanan](https://www.mcs.anl.gov/~snarayan/)
   
+## Professional Experience
+* May 2022 - Jul 2022: Software Engineer Intern
+  * Google
+  * Duties included: Data Source Confidence Ranking
+  
+* Jun 2021 - Sep 2021: Software Engineer Intern
+  * Google 
+  * Duties includes: Image Clustering and Deduplication 
+
+* Jun 2018 - Aug 2018: Software Engineer Intern
+  * [Industrial Toys, Electronic Arts](https://www.ea.com/ea-studios/industrial-toys)
+  * Duties included: Implement game logics
