@@ -26,12 +26,12 @@ I have a broad interest in machine learning and deep learning. My interested inc
 * University of Southern California, 2022 - 2027 (Expected)
   * Ph.D. in Computer Science
   
-* The University of Chicago, 2022 
+* The University of Chicago, 2020 - 2022 
   * M.S. in Statistics
     * Thesis Advisor: [Dr. Bradley J. Nelson](https://bnels.github.io) and [Prof. Lek-Heng Lim](https://www.stat.uchicago.edu/~lekheng/)
     * Thesis: [Topological Regularization in Deep Learning](/_docs/ms_thesis.pdf)
 
-* The University of Chicago, 2020
+* The University of Chicago, 2016 - 2020
   * B.S. with Honors in Mathematics
   * B.S. with Honors in Computer Science  
     * with Specialization in Machine Learning

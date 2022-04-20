@@ -12,15 +12,15 @@ redirect_from:
 [Here](/_docs/cv_2022.pdf) is a detailed pdf version.
 
 ## Education
-* University of Southern California, 2022-2027 (expected)
+* University of Southern California, 2022 - 2027 (expected)
   * Ph.D. in Computer Science
 
-* University of Chicago, 2022
+* University of Chicago, 2020 - 2022
   * M.S. in Statistics
   
-* University of Chicago, 2020
-  * B.S. with Honors in Mathematics
-  * B.S. with Honors in Computer Science <br/>
+* University of Chicago, 2016 - 2020
+  * B.S. _with Honors_ in Mathematics
+  * B.S. _with Honors_ in Computer Science  
     * with Specialization in Machine Learning
   * B.A. in Statistics
 
