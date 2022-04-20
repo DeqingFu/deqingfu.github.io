@@ -42,7 +42,7 @@ I have a broad interest in machine learning and deep learning. My interested inc
 ### Honors and Awards
 Provost Fellowship @ USC  
 Susanne H. Rudolph Scholarship @ UChicago  
-Liew Family College Research Fellows Fund ($5,000) @ UChicago  
-Jeff Metcalf Internship Award ($4000) @ UChicago  
+Liew Family College Research Fellows Fund (\$5,000) @ UChicago  
+Jeff Metcalf Internship Award (\$4,000) @ UChicago  
 Dean’s List 2016-2020 @ UChicago
 
