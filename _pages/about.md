@@ -23,6 +23,9 @@ I have a broad interest in machine learning and deep learning. My interested inc
 \[3\]	Sri Hari Krishna Narayanan, Paul Hovland, Kshitij Kulshreshtha, Devashri Nagarkar, Kaitlyn MacIntyre, Riley Wagner, **Deqing Fu**. *[Comparison of Two Gradient Computation Methods in Python](https://openreview.net/pdf?id=r1K7G7GRW)*. Neural Information Processing Systems (NIPS) Autodiff Workshop, 2017
 
 ### Education
+* University of Southern California, 2022 - 2027 (Expected)
+  * Ph.D. in Computer Science
+  
 * The University of Chicago, 2022 
   * M.S. in Statistics
     * Thesis Advisor: [Dr. Bradley J. Nelson](https://bnels.github.io) and [Prof. Lek-Heng Lim](https://www.stat.uchicago.edu/~lekheng/)
@@ -30,18 +33,15 @@ I have a broad interest in machine learning and deep learning. My interested inc
 
 * The University of Chicago, 2020
   * B.S. with Honors in Mathematics
-  * B.S. with Honors in Computer Science <br/>
+  * B.S. with Honors in Computer Science  
     * with Specialization in Machine Learning
   * B.A. in Statistics
 
 
 
 ### Honors and Awards
-Susanne H. Rudolph Scholarship \
-Liew Family College Research Fellows Fund ($5,000) \
-Dean’s List 2016-2020
-
-#### Links
-* [Department of Statistics, UChicago](https://stat.uchicago.edu/)
-* [Department personal homepage](https://stat.uchicago.edu/people/profile/deqing-fu/)
+Provost Fellowship @ USC  
+Susanne H. Rudolph Scholarship @ UChicago  
+Liew Family College Research Fellows Fund ($5,000) @ UChicago  
+Dean’s List 2016-2020 @ UChicago
 
