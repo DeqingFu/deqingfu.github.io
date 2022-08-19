@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 ### About
-I'll be a Ph.D. student in the Department of Computer Science, Viterbi School of Engineering at University of Southern California. Here is my [CV](/_docs/cv_2022.pdf). 
+I'm a Ph.D. student in the Department of Computer Science, Viterbi School of Engineering at University of Southern California. Here is my [CV](/_docs/cv_2022.pdf). 
 
 Before that, I obtained my M.S. degree in the Statistics at the University of Chicago and I was also an undergraduate student at the College, the University of Chicago, majoring in Mathematics (with Honors), Computer Science (with Honors) with the specialization in Machine Learning, and Statistics. 
 
