@@ -16,7 +16,7 @@ Before that, I obtained my M.S. degree in the Statistics at the University of Ch
 I have a broad interest in machine learning and deep learning. My interested includes, but not limited to, deep learning theory, representation learning, topological data analysis, spectral methods, and deep generative models.
 
 ### Publication
-\[1\]	**Deqing Fu**, Bradley Nelson. *[Topological Regularization for Dense Prediction](https://arxiv.org/pdf/2111.10984.pdf)*. Accepted at International Conference on Machine Learning and Application (ICMLA), 2022
+\[1\]	**Deqing Fu**, Bradley Nelson. *[Topological Regularization for Dense Prediction](https://arxiv.org/pdf/2111.10984.pdf)*. 2022 21st IEEE International Conference on Machine Learning and Applications (ICMLA), 2022
 
 \[2\]	Cooper Nederhood, Nicholas Kolkin, **Deqing Fu**, Jason Salavon. *[Harnessing the Conditioning Sensorium for Improved Image Translation](https://openaccess.thecvf.com/content/ICCV2021/papers/Nederhood_Harnessing_the_Conditioning_Sensorium_for_Improved_Image_Translation_ICCV_2021_paper.pdf)*. International Conference on Computer Vision (ICCV), 2021
 
