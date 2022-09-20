@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 ### About
-I'm a first-year Ph.D. student in the Department of Computer Science, Viterbi School of Engineering at University of Southern California. Here is my [CV](/_docs/cv_2022.pdf). I'm in the [USC Thoery Group](https://viterbi-web.usc.edu/~cstheory/) advised by [Prof. Vatsal Sharan](https://vatsalsharan.github.io), and meanwhile I'm working on building robust Natrual Language Processing advised by [Prof. Robin Jia](https://robinjia.github.io). 
+I'm a first-year Ph.D. student in the Department of Computer Science, Viterbi School of Engineering at University of Southern California. Here is my [CV](/_docs/cv_2022.pdf). I'm in the [USC Thoery Group](https://viterbi-web.usc.edu/~cstheory/) advised by [Prof. Vatsal Sharan](https://vatsalsharan.github.io), and meanwhile I'm working on building robust Natrual Language Processing advised by [Prof. Robin Jia](https://robinjia.github.io) of [USC NLP Group](https://cl.usc.edu). 
 
 Before that, I obtained my M.S. degree in the Statistics at the University of Chicago and I was also an undergraduate student at the College, the University of Chicago, majoring in Mathematics (with Honors), Computer Science (with Honors) with the specialization in Machine Learning, and Statistics. 
 
@@ -46,3 +46,13 @@ Liew Family College Research Fellows Fund (\\$5,000) @ UChicago
 Jeff Metcalf Internship Award (\\$4,000) @ UChicago  
 Dean’s List 2016-2020 @ UChicago
 
+### Personal Interests
+Tai-Chi: [Here](https://youtu.be/ZTMmCwvYuWQ) is my performance video, recorded in 2015
+
+Chinese Literature
+* Favorite ancient Chinese writer: Zhang Dai (张岱)
+* Favorite modern Chinese writers: Wang Zengqi (汪曾祺)
+* Chinese Classic of Poetry (诗经)
+
+Chinese History
+* I'm especially interested in [Wei](https://en.wikipedia.org/wiki/Cao_Wei)[Jin](https://en.wikipedia.org/wiki/Jin_dynasty_(266–420))[Northern and Southern dynasties](https://en.wikipedia.org/wiki/Northern_and_Southern_dynasties)  ([魏晋南北朝](https://zh.wikipedia.org/wiki/魏晋南北朝)) period, which is an about 400-year transitional periods between Han ([汉](https://zh.wikipedia.org/wiki/汉朝)) and （[唐](https://zh.wikipedia.org/wiki/唐朝)). 魏晋南北朝 is a period of both military/political chaos and cultural prosperity. 
