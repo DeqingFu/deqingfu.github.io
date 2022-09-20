@@ -55,4 +55,4 @@ Dean’s List 2016-2020 @ UChicago
   * Chinese Classic of Poetry (诗经)
 
 * Chinese History
-  I'm especially interested in [Wei](https://en.wikipedia.org/wiki/Cao_Wei)-[Jin](https://en.wikipedia.org/wiki/Jin_dynasty_(266–420))-[Northern and Southern dynasties](https://en.wikipedia.org/wiki/Northern_and_Southern_dynasties)  ([魏晋南北朝](https://zh.wikipedia.org/wiki/魏晋南北朝)) period, which is an about 400-year transitional periods between Han ([汉](https://zh.wikipedia.org/wiki/汉朝)) and Tang（[唐](https://zh.wikipedia.org/wiki/唐朝)). 魏晋南北朝 is a period of both military/political chaos and cultural prosperity. 
+  * I'm especially interested in [Wei](https://en.wikipedia.org/wiki/Cao_Wei)-[Jin](https://en.wikipedia.org/wiki/Jin_dynasty_(266–420))-[Northern and Southern dynasties](https://en.wikipedia.org/wiki/Northern_and_Southern_dynasties)  ([魏晋南北朝](https://zh.wikipedia.org/wiki/魏晋南北朝)) period, which is an about 400-year transitional periods between Han ([汉](https://zh.wikipedia.org/wiki/汉朝)) and Tang（[唐](https://zh.wikipedia.org/wiki/唐朝)). 魏晋南北朝 is a period of both military/political chaos and cultural prosperity. 
