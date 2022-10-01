@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-[Here](/_docs/cv_2022.pdf) is a detailed pdf version.
+[Here](/_docs/cv_2022_simple.pdf) is a detailed pdf version.
 
 ## Education
 * University of Southern California, 2022 - 2027 (expected)
