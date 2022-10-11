@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 ### About
-I'm a first-year Ph.D. student in the Department of Computer Science, Viterbi School of Engineering at University of Southern California. Here is my [CV](/_docs/cv_2022_simple.pdf). I'm in the [USC Thoery Group](https://viterbi-web.usc.edu/~cstheory/) advised by [Prof. Vatsal Sharan](https://vatsalsharan.github.io), and meanwhile I'm working on building robust Natrual Language Processing advised by [Prof. Robin Jia](https://robinjia.github.io) of [USC NLP Group](https://cl.usc.edu). 
+I'm a first-year Ph.D. student in the Department of Computer Science, Viterbi School of Engineering at University of Southern California. Here is my [CV](/_docs/cv_2022_simple.pdf). I'm mainly interested in deep learning theory, and I'm advised by [Prof. Vatsal Sharan](https://vatsalsharan.github.io) of [USC Thoery Group](https://viterbi-web.usc.edu/~cstheory/) and co-advised by [Prof. Mahdi Soltanolkotabi](https://viterbi-web.usc.edu/~soltanol/index.html). Meanwhile, I'm also working on building robust Natrual Language Processing advised by [Prof. Robin Jia](https://robinjia.github.io) of [USC NLP Group](https://cl.usc.edu). 
 
 Before that, I obtained my M.S. degree in the Statistics at the University of Chicago and I was also an undergraduate student at the College, the University of Chicago, majoring in Mathematics (with Honors), Computer Science (with Honors) with the specialization in Machine Learning, and Statistics. 
 
