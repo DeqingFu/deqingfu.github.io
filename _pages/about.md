@@ -10,10 +10,13 @@ I’m a third-year Ph.D. student in Computer Science at the <span style="color:#
 
 
 ## Research
-<h4 style="text-decoration:underline">Algorithmic Perspectives on Large Language Models</h4>
+You can find a full picture of my research in my [publication](/_pages/publications.html) page or my [Google scholar](https://scholar.google.com/citations?user=fsbgfqEAAAAJ&hl=en) page. They belong to the following categories.
+<h3 style="text-decoration:underline">Algorithmic Perspectives on Large Language Models</h3>
+How to think about LLMs and transformers architectures from a theoretical and algorithmic perspective? 
+- How transformer implements its capabilitie of in-context learning? Is it really doing gradient descent in-context? [(NeurIPS 2024)](https://arxiv.org/abs/2310.17086).
+- How pretrained LLMs compute simple arithmetic tasks? Memorization or Mechanisms? [(NeurIPS 2024)](https://arxiv.org/abs/2406.03445)
 
-
-<h4 style="text-decoration:underline">Synthetic Data and Multimodal Learning</h4>
+<h3 style="text-decoration:underline">Synthetic Data and Multimodal Learning</h3>
 
 ## Education
 - University of Southern California, 2022 - Present
