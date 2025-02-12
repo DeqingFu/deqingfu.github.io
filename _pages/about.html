@@ -11,7 +11,7 @@ redirect_from:
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=VT323&display=swap" rel="stylesheet">
 
 <style>
   /* Main texts in Arial; titles/subtitles in Orbitron */
@@ -81,3 +81,11 @@ redirect_from:
 
 <!-- Twitter feed moved to bottom -->
 <a class="twitter-timeline" href="https://twitter.com/DeqingFu?ref_src=twsrc%5Etfw">Tweets by DeqingFu</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<!-- Added script for random VT323 font chance -->
+<script>
+  // With a small chance (5%), change body text to VT323.
+  if (Math.random() < 0.05) {
+    document.body.style.fontFamily = 'VT323, monospace';
+  }
+</script>
