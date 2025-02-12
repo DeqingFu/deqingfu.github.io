@@ -14,30 +14,30 @@ redirect_from:
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 
 <style>
+  /* Main texts in Arial; titles/subtitles in Orbitron */
   body {
+    font-family: Arial, sans-serif;
+  }
+  h1, h2, h3, h4 {
     font-family: "Orbitron", sans-serif;
   }
-  .arial {
-    font-family: Arial, sans-serif !important;
-  }
+  /* Removed font toggle styles */
 </style>
 
-<button id="fontToggle">Switch to Arial</button>
+<!-- Removed font toggle button -->
 
-<div style="line-height: 1.6; color: #333; display: flex;">
-  <div style="width: 60%; padding-right: 20px;">
+<div style="line-height: 1.6; color: #333;">
+  <div>
     <p>I’m a third-year Ph.D. student in Computer Science at the <span style="color:#990000;">University of Southern California (USC)</span>. My main research interests are deep learning theory, natural language processing, and the interpretability of AI systems. I'm (co-)advised by <a href="https://vatsalsharan.github.io" style="color: #990000;">Prof. Vatsal Sharan</a> of <a href="https://viterbi-web.usc.edu/~cstheory/" style="color: #990000;">USC Theory Group</a> and <a href="https://robinjia.github.io" style="color: #990000;">Prof. Robin Jia</a> of <a href="https://allegro-lab.github.io" style="color: #990000;">Allegro Lab</a> within <a href="https://nlp.usc.edu" style="color: #990000;">USC NLP Group</a>, and I'm working closely with <a href="https://viterbi-web.usc.edu/~soltanol/index.html" style="color: #990000;">Prof. Mahdi Soltanolkotabi</a> and <a href="https://viterbi-web.usc.edu/~shanghua/" style="color: #990000;">Prof. Shang-Hua Teng</a>.</p>
 
     <h2 style="color: #990000; border-bottom: 2px solid #990000; padding-bottom: 5px;">News</h2>
     <div>
       <!-- Add your news items here -->
       <div style="margin-bottom: 10px;">
-        <h4 style="margin: 0; color: #990000;">Feb 12, gave a talk at Duke NLP Seminar</h4>
         <p style="margin: 0; font-size: 14px; color: #555;">February 12, 2025</p>
         <p style="margin: 0;">Gave a talk at Duke NLP Seminar.</p>
       </div>
       <div style="margin-bottom: 10px;">
-        <h4 style="margin: 0; color: #990000;">Jan 22, three papers accepted to ICLR 2025. DeLLMa got spotlight.</h4>
         <p style="margin: 0; font-size: 14px; color: #555;">January 22, 2025</p>
         <p style="margin: 0;">Three papers (<a href="https://arxiv.org/abs/2410.04734" style="color: #990000;">TLDR</a>, <a href="https://arxiv.org/abs/2403.06925" style="color: #990000;">Sensitivity</a>, and <a href="https://arxiv.org/abs/2402.02392" style="color: #990000;">DeLLMa</a>) accepted to ICLR 2025. <a href="https://arxiv.org/abs/2402.02392" style="color: #990000;">DeLLMa</a> got spotlight.</p>
       </div>
@@ -77,24 +77,10 @@ redirect_from:
       </li>
     </ul>
   </div>
-
-  <div style="width: 30%;">
-    <h2 style="color: #990000; border-bottom: 2px solid #990000; padding-bottom: 5px;">Connect</h2>
-    <a class="twitter-timeline" href="https://twitter.com/DeqingFu?ref_src=twsrc%5Etfw">Tweets by DeqingFu</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
 </div>
 
-<script>
-  const fontToggle = document.getElementById('fontToggle');
-  const body = document.querySelector('body');
-
-  fontToggle.addEventListener('click', function() {
-    if (body.classList.contains('arial')) {
-      body.classList.remove('arial');
-      fontToggle.textContent = 'Switch to Arial';
-    } else {
-      body.classList.add('arial');
-      fontToggle.textContent = 'Switch to Orbitron';
-    }
-  });
-</script>
+<!-- Twitter feed moved to bottom -->
+<div style="margin-top: 20px;">
+  <a class="twitter-timeline" data-width="300" data-height="450" data-theme="light" href="https://twitter.com/DeqingFu?ref_src=twsrc%5Etfw">Tweets by DeqingFu</a> 
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
