@@ -17,7 +17,12 @@ redirect_from:
   body {
     font-family: "Orbitron", sans-serif;
   }
+  .arial {
+    font-family: Arial, sans-serif !important;
+  }
 </style>
+
+<button id="fontToggle">Switch to Arial</button>
 
 <div style="line-height: 1.6; color: #333; display: flex;">
   <div style="width: 60%; padding-right: 20px;">
@@ -73,8 +78,23 @@ redirect_from:
     </ul>
   </div>
 
-  <div style="width: 40%;">
+  <div style="width: 30%;">
     <h2 style="color: #990000; border-bottom: 2px solid #990000; padding-bottom: 5px;">Connect</h2>
-    <a class="twitter-timeline" data-width="100%" data-height="300" href="https://twitter.com/DeqingFu?ref_src=twsrc%5Etfw">Tweets by @DeqingFu</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a class="twitter-timeline" data-width="100%"  href="https://twitter.com/DeqingFu?ref_src=twsrc%5Etfw">Tweets by @DeqingFu</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
 </div>
+
+<script>
+  const fontToggle = document.getElementById('fontToggle');
+  const body = document.querySelector('body');
+
+  fontToggle.addEventListener('click', function() {
+    if (body.classList.contains('arial')) {
+      body.classList.remove('arial');
+      fontToggle.textContent = 'Switch to Arial';
+    } else {
+      body.classList.add('arial');
+      fontToggle.textContent = 'Switch to Orbitron';
+    }
+  });
+</script>
