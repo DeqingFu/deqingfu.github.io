@@ -24,6 +24,13 @@ redirect_from:
   /* Removed font toggle styles */
 </style>
 
+<!-- Added script for random VT323 font chance -->
+<script>
+  if (Math.random() < 0.95) {
+    document.body.style.fontFamily = 'VT323, monospace';
+  }
+</script>
+
 <!-- Removed font toggle button -->
 
 <div style="line-height: 1.6; color: #333;">
@@ -80,12 +87,6 @@ redirect_from:
 </div>
 
 <!-- Twitter feed moved to bottom -->
-<a class="twitter-timeline" href="https://twitter.com/DeqingFu?ref_src=twsrc%5Etfw">Tweets by DeqingFu</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="twitter-timeline" data-theme="light" data-tweet-limit="5" href="https://twitter.com/DeqingFu?ref_src=twsrc%5Etfw">Tweets by DeqingFu</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<!-- Added script for random VT323 font chance -->
-<script>
-  // With a small chance (5%), change body text to VT323.
-  if (Math.random() < 0.05) {
-    document.body.style.fontFamily = 'VT323, monospace';
-  }
-</script>
