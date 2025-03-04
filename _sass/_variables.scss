@@ -6,7 +6,7 @@
    Typography
    ========================================================================== */
 
-$doc-font-size              : 20;
+$doc-font-size              : 20 !default;
 
 /* paragraph indention */
 $paragraph-indent           : false; // true, false (default)
