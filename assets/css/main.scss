@@ -39,3 +39,18 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* Custom font size */
+html {
+  font-size: 18px; /* Increase from the default (usually 16px) */
+}
+
+body {
+  font-size: 1em; /* 1em will be relative to the html font-size */
+}
+
+/* You can also target specific elements if needed */
+.page__content p {
+  font-size: 1em;
+  line-height: 1.6;
+}
