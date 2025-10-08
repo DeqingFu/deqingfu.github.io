@@ -398,6 +398,7 @@ imagemagick:
     - 480
     - 800
     - 1400
+    - 2000
   input_directories:
     - assets/img/
   input_formats:
@@ -407,7 +408,7 @@ imagemagick:
     - ".tiff"
     - ".gif"
   output_formats:
-    webp: "-quality 85"
+    webp: "-quality 95"
 
 # Lazy loading images
 #   If you enable lazy loading, all images will add the loading="lazy" attribute.
