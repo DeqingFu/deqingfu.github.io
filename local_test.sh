@@ -1,1 +1,2 @@
-rm -rf _site && bundle exec jekyll serve --livereload --force_polling
+#!/bin/bash
+eval "$(rbenv init - zsh)" && rm -rf _site && bundle exec jekyll serve --livereload
