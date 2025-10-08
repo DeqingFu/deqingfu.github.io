@@ -1,0 +1,26 @@
+# AI alignment and safety (Blue family)
+"AI Alignment": "#2196f3" # Light blue
+"AI Safety": "#2196f3" # Light blue
+"Self Alignment": "#2196f3" # Light blue
+"Personalization": "#2196f3" # Light blue
+"Online Alignment": "#2196f3" # Light blue
+"LLM Bias": "#2196f3" # Light blue
+
+# RL and foundation model (Red family)
+"RL": "#f44336" # Standard red
+"Exploration": "#f44336" # Standard red
+"Foundation Model for Decision Making": "#f44336" # Standard red
+"Uncertainty Quantification": "#f44336" # Standard red
+"AI Agent": "#f44336" # Standard red
+"Planning": "#f44336" # Standard red
+"Model-Based Learning": "#f44336" # Standard red
+"In Context Learning": "#f44336" # Standard red
+"Bayesian Inference": "#f44336" # Standard red
+
+# AI for science (Orange family)
+"AI for Science": "#ff9800" # Orange
+"AI for Social Science": "#ff9800" # Orange
+"AI for Operations Research": "#ff9800" # Orange
+"Neural Network Understanding": "#ff9800" # Orange
+"AI for Neuroscience": "#ff9800" # Orange
+"LLM Driven Simulation": "#ff9800" # Orange

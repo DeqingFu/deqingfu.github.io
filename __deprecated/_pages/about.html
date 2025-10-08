@@ -1,0 +1,113 @@
+---
+permalink: /
+title: "About"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+
+{% include base_path %}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Updated fonts link -->
+<link href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Orbitron:wght@400..900&family=VT323&display=swap" rel="stylesheet">
+
+<style>
+  /* Main texts in Arial; titles/subtitles in Orbitron */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  h1, h2, h3, h4 {
+    font-family: "Orbitron", sans-serif;
+  }
+  /* Apply Long Cang for elements marked as Chinese */
+  :lang(zh) {
+    font-family: "Long Cang", sans-serif;
+  }
+  /* Removed font toggle styles */
+</style>
+
+<!-- Added script for random VT323 font chance -->
+<script>
+  if (Math.random() < 0.01) {
+    document.body.style.fontFamily = 'VT323, monospace';
+    document.body.style.fontSize = '18px';
+  }
+</script>
+
+<!-- Removed font toggle button -->
+
+<div style="line-height: 1.6; color: #333;">
+  <p>This is Deqing Fu (<span style="font-family: 'Long Cang', sans-serif;">傅德卿</span>) and I'm a fourth-year Ph.D. candidate in Computer Science at the <span style="color:#990000;">University of Southern California (USC)</span>. My main research interests are deep learning theory, natural language processing, and the interpretability of AI systems. I'm (co-)advised by <a href="https://vatsalsharan.github.io" style="color: #990000;">Prof. Vatsal Sharan</a> of <a href="https://viterbi-web.usc.edu/~cstheory/" style="color: #990000;">USC Theory Group</a> and <a href="https://robinjia.github.io" style="color: #990000;">Prof. Robin Jia</a> of <a href="https://allegro-lab.github.io" style="color: #990000;">Allegro Lab</a> within <a href="https://nlp.usc.edu" style="color: #990000;">USC NLP Group</a>, and I'm working closely with <a href="https://viterbi-web.usc.edu/~soltanol/index.html" style="color: #990000;">Prof. Mahdi Soltanolkotabi</a> and <a href="https://viterbi-web.usc.edu/~shanghua/" style="color: #990000;">Prof. Shang-Hua Teng</a>.</p>
+
+  <h2 style="color: #990000; border-bottom: 2px solid #990000; padding-bottom: 5px;">News</h2>
+  <div>
+    <!-- Add your news items here -->
+    <!-- <div style="margin-bottom: 5px;">
+      <p style="margin: 0; font-size: 14px; color: #555;">May 8, 2025</p>
+      <p style="margin: 0;">Talk at FlaNN Seminar.</p>
+    </div> -->
+    <div style="margin-bottom: 5px;">
+      <p style="margin: 0; font-size: 14px; color: #555;">July 23, 2025</p>
+      <p style="margin: 0;">Three new preprints (<a href="https://arxiv.org/abs/2505.14071" style="color: #990000;">Multimodal Steering</a>, <a href="https://arxiv.org/abs/2506.09967" style="color: #990000;">Resa</a>, and <a href="https://arxiv.org/abs/2507.16746" style="color: #990000;">Zebra-CoT</a>)</p>
+    </div>
+    <div style="margin-bottom: 5px;">
+      <p style="margin: 0; font-size: 14px; color: #555;">May 22, 2025</p>
+      <p style="margin: 0;">Talk at Stanford NLP Seminar. <a href="../_docs/20250522_stanford_nlp_seminar.pdf" style="color: #990000;">[Slides]</a></p>
+    </div>
+    <div style="margin-bottom: 5px;">
+      <p style="margin: 0; font-size: 14px; color: #555;">May 8, 2025</p>
+      <p style="margin: 0;">Talk at UChicago/TTIC NLP Seminar.</p>
+    </div>
+    <div style="margin-bottom: 5px;">
+      <p style="margin: 0; font-size: 14px; color: #555;">April 28, 2025</p>
+      <p style="margin: 0;">Received Viterbi Best Research Assistant Award (one per department).</p>
+    </div>
+    <div style="margin-bottom: 5px;">
+      <p style="margin: 0; font-size: 14px; color: #555;">February 12, 2025</p>
+      <p style="margin: 0;">Talk at Duke NLP Seminar.</p>
+    </div>
+    <div style="margin-bottom: 5px;">
+      <p style="margin: 0; font-size: 14px; color: #555;">January 22, 2025</p>
+      <p style="margin: 0;">Three papers (<a href="https://arxiv.org/abs/2410.04734" style="color: #990000;">TLDR</a>, <a href="https://arxiv.org/abs/2403.06925" style="color: #990000;">Sensitivity</a>, and <a href="https://arxiv.org/abs/2402.02392" style="color: #990000;">DeLLMa</a>) accepted to ICLR 2025. <a href="https://arxiv.org/abs/2402.02392" style="color: #990000;">DeLLMa</a> got spotlight.</p>
+    </div>
+  </div>
+
+  <h2 style="color: #990000; border-bottom: 2px solid #990000; padding-bottom: 5px;">Research</h2>
+  <p>You can find a full picture of my research on the <a href="/publications/" style="color: #990000;">publications</a> page or my <a href="https://scholar.google.com/citations?user=fsbgfqEAAAAJ&hl=en" style="color: #990000;">Google Scholar</a> page. They belong to the following categories:</p>
+
+  <h3 style="color: #990000; text-decoration: underline;">Algorithmic Perspectives on Large Language Models</h3>
+  <p><em>How to think about LLMs and transformers architectures from a theoretical and algorithmic perspective?</em></p>
+  <ul>
+    <li>How transformer implements its capability of in-context learning? Is it really doing gradient descent in-context? <a href="https://arxiv.org/abs/2310.17086" style="color: #990000;">(NeurIPS 2024)</a></li>
+    <li>How pretrained LLMs compute simple arithmetic tasks? Memorization or Mechanisms? (<a href="https://arxiv.org/abs/2406.03445" style="color: #990000;">NeurIPS 2024</a>, <a href="https://fouriernumber.github.io" style="color: #990000;">arXiv 2025</a>)</li>
+    <li>Is there a unified notion to distinguish Transformers from other neural architectures? <a href="https://arxiv.org/abs/2403.06925"  style="color: #990000;">(ICLR 2025)</a></li>
+    <li>Can we use classical decision theory to guide LLMs to make decisions under uncertainty? <a href="https://DeLLMa.github.io" style="color: #990000;">(ICLR 2025 Spotlight)</a></li>
+  </ul>
+
+  <h3 style="color: #990000; text-decoration: underline;">Synthetic Data and Multimodal Learning</h3>
+  <p><em>How can we evaluate Multimodal LLMs/VLMs in a robust way? How could we improve them with synthetic data?</em></p>
+  <ul>
+    <li>Are Multimodal LLMs sensitive to the input modality of the same problem? <a href="https://arxiv.org/abs/2404.01266" style="color: #990000;">(COLM 2024)</a></li>
+    <li>Improving Text-to-Image models with VLM's feedback. <a href="https://arxiv.org/abs/2311.17946" style="color: #990000;">(NAACL 2025)</a></li>
+    <li>Evaluating Multimodal LLMs' hallucination rates by training a token-level reward model (TLDR). Improving Multimodal LLMs with TLDR at both training and inference time. <a href="https://arxiv.org/abs/2410.04734" style="color: #990000;">(ICLR 2025)</a></li>
+  </ul>
+
+  <h2 style="color: #990000; border-bottom: 2px solid #990000; padding-bottom: 5px;">Education</h2>
+  <ul>
+    <li>University of Southern California, 2022 - Present
+      <ul>
+        <li>Ph.D. in Computer Science</li>
+      </ul>
+    </li>
+    <li>University of Chicago, 2016 - 2022
+      <ul>
+        <li>M.S. in Statistics</li>
+        <li>B.S. <em>with Honors</em> in Mathematics, Computer Science, and Statistics</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
