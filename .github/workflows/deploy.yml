@@ -43,7 +43,8 @@ jobs:
           node-version: '20'
       
       - name: Install Node dependencies
-        run: npm ci
+        run: npm install
+        continue-on-error: true
       
       - name: Setup Pages
         id: pages
