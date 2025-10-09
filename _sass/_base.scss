@@ -563,11 +563,19 @@ a:not(.navbar-brand):not(.nav-link):not(.publication-link):hover {
   color: #ff5722 !important;
 }
 
-/* CV link styling */
-.more-info a[href*="cv.pdf"],
-.more-info a[href*="cv.pdf"]:hover {
-  color: #2e8b57 !important;
-  font-weight: bold;
+/* CV link styling - theme-aware */
+.more-info a[href$=".pdf"][href*="cv"],
+.more-info a[href$=".pdf"][href*="CV"],
+.more-info a[title~="CV"],
+.navbar-brand.social a[title~="CV"] {
+  color: var(--global-theme-color) !important;
+}
+
+.more-info a[href$=".pdf"][href*="cv"]:hover,
+.more-info a[href$=".pdf"][href*="CV"]:hover,
+.more-info a[title~="CV"]:hover,
+.navbar-brand.social a[title~="CV"]:hover {
+  color: var(--global-hover-color) !important;
 }
 
 /* Navbar social icons */

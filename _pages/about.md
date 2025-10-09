@@ -12,7 +12,9 @@ profile:
     <div style="text-align: center;">
       <p>deqingfu[at]usc[dot]edu</p>
       <p style="font-size: 1.5em; display: flex; gap: 20px; justify-content: center; align-items: center;">
-      <a href="/assets/pdf/curriculum_vitae_deqing.pdf" target="_blank" title="CV" style="margin-left: -10px; margin-right: -8px; margin-top: 1px; font-size: 1.1em;">CV</a>
+      <a href="/assets/pdf/curriculum_vitae_deqing.pdf" target="_blank" title="CV" style="margin-left: -10px; margin-right: -8px; margin-top: 1px; display: inline-flex; align-items: center;">
+        <img src="/assets/img/icon-cv.svg" alt="CV" style="width: 28px; height: 28px; vertical-align: text-bottom;"/>
+      </a>
       <a href="https://scholar.google.com/citations?user=fsbgfqEAAAAJ&hl=en" target="_blank" title="Google Scholar" style="margin-left: -10px; margin-right: -8px;"><img src="/assets/img/Google_Scholar_logo.svg" alt="Google Scholar" style="width: 28px; height: 28px; vertical-align: text-bottom; margin-top: -2px;"></a>
       <a href="https://www.semanticscholar.org/author/Deqing-Fu/2135593484" target="_blank" title="Semantic Scholar" style="margin-left: -7px; margin-right: -8px;"><i class="ai ai-semantic-scholar" style="font-size: 1.3em;"></i></a>
       <a href="https://github.com/DeqingFu" target="_blank" title="GitHub" style="margin-left: -6px; margin-right: -12px;"><img src="/assets/img/github-mark.png" alt="GitHub" style="width: 28px; height: 28px; vertical-align: text-bottom; margin-top: -1px;"></a>
