@@ -295,8 +295,8 @@ ul.task-list input[type="checkbox"] {
     transition: all 0.3s ease;
 
     &:hover {
-      color: #0077c8 !important;
-      background-color: rgba(0, 119, 200, 0.1);
+      color: var(--global-hover-color) !important;
+      background-color: color-mix(in srgb, var(--global-hover-color) 10%, transparent);
       transform: translateY(-1px);
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
@@ -308,8 +308,8 @@ ul.task-list input[type="checkbox"] {
     color: var(--global-theme-color);
 
     &:hover {
-      color: #0077c8 !important;
-      background-color: rgba(0, 119, 200, 0.1);
+      color: var(--global-hover-color) !important;
+      background-color: color-mix(in srgb, var(--global-hover-color) 10%, transparent);
       transform: translateY(-1px);
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
@@ -449,8 +449,8 @@ a:not(.navbar-brand):not(.nav-link):not(.publication-link) {
 }
 
 a:not(.navbar-brand):not(.nav-link):not(.publication-link):hover {
-  background-color: rgba(0, 119, 200, 0.1);
-  color: #0077c8 !important;
+  background-color: color-mix(in srgb, var(--global-hover-color) 10%, transparent);
+  color: var(--global-hover-color) !important;
 }
 
 /* Button hover effects - ensure all buttons get upward movement */
@@ -628,7 +628,7 @@ a:not(.navbar-brand):not(.nav-link):not(.publication-link):hover {
 }
 
 .section-blue a:hover {
-  background-color: rgba(0, 119, 200, 0.1);
+  background-color: color-mix(in srgb, var(--global-hover-color) 10%, transparent);
   text-decoration: none !important;
   transform: translateY(-1px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
