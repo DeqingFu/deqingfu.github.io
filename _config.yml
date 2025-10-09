@@ -488,7 +488,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-  fonts: "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+  fonts: "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=UnifrakturMaguntia&family=Fruktur:opsz,wght@12..72,400&display=swap"
   highlightjs:
     integrity:
       css:

@@ -779,6 +779,16 @@ footer.fixed-bottom {
   }
 }
 
+/* Fraktur hover effect for specific phrases */
+.fraktur-hover {
+  transition: color 0.2s ease, text-transform 0.2s ease;
+}
+
+.fraktur-hover:hover {
+  font-family: 'UnifrakturMaguntia', 'Fruktur', 'EB Garamond', Georgia, 'Times New Roman', serif !important;
+  text-transform: lowercase;
+}
+
 footer.sticky-bottom {
   border-top: 1px solid var(--global-divider-color);
   padding-top: 40px;
@@ -1021,8 +1031,7 @@ footer.sticky-bottom {
     li {
       margin-bottom: 1rem;
 
-      .preview {
-      }
+  // .preview block intentionally omitted; style inherited from publication layout
 
       .abbr {
         margin-bottom: 0.5rem;
