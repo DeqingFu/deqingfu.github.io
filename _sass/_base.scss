@@ -834,6 +834,11 @@ footer.fixed-bottom {
   transform: scale(1.08);
 }
 
+/* In sans mode, use a larger scale for better visual balance */
+html.font-sans .fraktur-hover[data-text]:hover::before {
+  transform: scale(1.32);
+}
+
 footer.sticky-bottom {
   border-top: 1px solid var(--global-divider-color);
   padding-top: 40px;

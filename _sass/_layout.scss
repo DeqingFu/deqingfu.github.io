@@ -8,6 +8,7 @@ body {
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
   font-family: 'EB Garamond', Georgia, 'Times New Roman', Times, serif;
+  font-weight: 300; /* slightly heavier default weight */
 
   h1,
   h2,
@@ -22,6 +23,7 @@ body {
 /* When sans font mode is active */
 html.font-sans body {
   font-family: 'Montserrat', 'EB Garamond', Georgia, 'Times New Roman', Times, serif;
+  font-weight: 300; /* keep sans default slightly heavier too */
 }
 
 /* Font toggle visual hint (inherits navbar link sizing/alignment) */
