@@ -26,6 +26,11 @@ html.font-sans body {
   font-weight: 300; /* keep sans default slightly heavier too */
 }
 
+/* Enlarge only body text in serif mode by 15% (UI using rem stays unchanged) */
+html:not(.font-sans) body {
+  font-size: 1.15rem;
+}
+
 /* Font toggle visual hint (inherits navbar link sizing/alignment) */
 #font-toggle {
   font-family: 'EB Garamond', Georgia, 'Times New Roman', Times, serif;
