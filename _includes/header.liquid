@@ -126,6 +126,22 @@
               </button>
             </li>
           {% endif %}
+          {% if site.enable_font_toggle %}
+            <!-- Toggle font family (serif/sans) -->
+            <li class="nav-item">
+              <a
+                id="font-toggle"
+                class="nav-link"
+                role="button"
+                href="#"
+                data-baseurl="{{ site.baseurl }}"
+                title="Toggle font family"
+                aria-label="Toggle font family"
+              >
+                <img id="font-toggle-img" src="{{ '/assets/img/logo_taro.png' | relative_url }}" alt="Toggle font" />
+              </a>
+            </li>
+          {% endif %}
         </ul>
       </div>
     </div>

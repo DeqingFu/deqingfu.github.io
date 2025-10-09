@@ -430,12 +430,15 @@ enable_bing_verification: false # enables bing site verification
 enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
-enable_darkmode: true # enables switching between light/dark modes
+enable_darkmode: false # disables dark mode and hides the switch
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
 enable_project_categories: false # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
 enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
+
+# Custom UI toggles
+enable_font_toggle: true # enables a navbar toggle to switch between serif (EB Garamond) and sans (Montserrat)
 
 default_theme_setting: light # light | dark | system (controls first-visit default)
 
@@ -488,7 +491,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-  fonts: "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=UnifrakturMaguntia&family=Fruktur:opsz,wght@12..72,400&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=UnifrakturMaguntia&family=Fruktur:opsz,wght@12..72,400&display=swap"
   highlightjs:
     integrity:
       css:

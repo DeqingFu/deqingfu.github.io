@@ -19,6 +19,11 @@ strong {
   color: var(--global-text-color);
 }
 
+/* Let bold text inherit parent color (so <span style="color:"> with <strong> keeps the color) */
+strong {
+  color: inherit;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -787,14 +792,46 @@ footer.fixed-bottom {
   }
 }
 
-/* Fraktur hover effect for specific phrases */
+/* Fraktur hover effect for specific phrases (no reflow) */
 .fraktur-hover {
-  transition: color 0.2s ease, text-transform 0.2s ease;
+  --fraktur-color: currentColor; /* pin the intended text color for overlay */
+  position: relative;
+  display: inline-block;
+  transition: color 0.2s ease;
 }
 
-.fraktur-hover:hover {
-  font-family: 'UnifrakturMaguntia', 'Fruktur', 'EB Garamond', Georgia, 'Times New Roman', serif !important;
+/* Overlay a Fraktur clone on hover; original keeps layout width */
+.fraktur-hover::before {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  font-family: 'UnifrakturMaguntia', 'Fruktur', 'EB Garamond', Georgia, 'Times New Roman', serif;
   text-transform: lowercase;
+  color: var(--fraktur-color); /* use pinned color */
+  -webkit-text-fill-color: var(--fraktur-color); /* paint with pinned color even if base text is transparent */
+  z-index: 1; /* ensure overlay paints above original text */
+  opacity: 0;
+  transform: scale(0.98);
+  transform-origin: left center;
+  pointer-events: none;
+  transition: none; /* no fade on mouseout to avoid flash */
+  will-change: opacity, transform;
+}
+
+/* Enable transition only during hover-in */
+.fraktur-hover:hover::before {
+  transition: opacity 0.05s ease-out, transform 0.05s ease-out;
+}
+
+/* Hide original glyphs without changing computed color */
+.fraktur-hover[data-text]:hover {
+  -webkit-text-fill-color: transparent; /* Safari/Chrome/Firefox compatibility */
+  text-shadow: none;
+}
+
+.fraktur-hover[data-text]:hover::before {
+  opacity: 1;
+  transform: scale(1.08);
 }
 
 footer.sticky-bottom {
@@ -1065,7 +1102,14 @@ footer.sticky-bottom {
       }
 
       .title {
-        font-weight: bolder;
+        font-family: 'Montserrat', 'EB Garamond', Georgia, 'Times New Roman', serif;
+        font-weight: 600; /* semi-bold titles in publications */
+      }
+
+      /* Ensure linked titles are bold too */
+      .title a {
+        font-family: 'Montserrat', 'EB Garamond', Georgia, 'Times New Roman', serif;
+        font-weight: 600 !important;
       }
 
       .author {

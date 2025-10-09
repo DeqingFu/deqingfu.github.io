@@ -2,6 +2,7 @@
  * Content
  ******************************************************************************/
 
+/* Default body font is serif (EB Garamond) */
 body {
   padding-bottom: 70px;
   color: var(--global-text-color);
@@ -16,6 +17,30 @@ body {
   h6 {
     scroll-margin-top: 66px;
   }
+}
+
+/* When sans font mode is active */
+html.font-sans body {
+  font-family: 'Montserrat', 'EB Garamond', Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Font toggle visual hint (inherits navbar link sizing/alignment) */
+#font-toggle {
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+
+html.font-sans #font-toggle {
+  font-family: 'Montserrat', 'EB Garamond', Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+}
+
+/* Make the toggle icon match nav text size */
+#font-toggle-img {
+  height: 1em; /* same as text height */
+  width: auto;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 body.fixed-top-nav {
