@@ -4,16 +4,18 @@
 
 @use "sass:color";
 
+$theme-light: $uchicago-maroon-color;
+$hover-light: color.scale($uchicago-maroon-color, $lightness: 12%, $saturation: 4%);
+$theme-dark: $uchicago-maroon-color;
+$hover-dark: color.scale($uchicago-maroon-color, $lightness: -8%, $saturation: 4%);
+
 :root {
   --global-bg-color: #{$white-color};
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
-  // --global-theme-color: #{$blue-color-dark};
-  // --global-theme-color: #{$nyu-violet-color};
-  --global-theme-color: #{$columbia-blue-2-color};
-  // --global-theme-color: #{$columbia-blue-3-color};
-  --global-hover-color: #{$columbia-blue-3-color};
+  --global-theme-color: #{$theme-light};
+  --global-hover-color: #{$hover-light};
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$white-color};
   --global-footer-text-color: #{$black-color};
@@ -77,8 +79,8 @@ html[data-theme="dark"] {
   --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$grey-color-light};
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
+  --global-theme-color: #{$theme-dark};
+  --global-hover-color: #{$hover-dark};
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$white-color};
   --global-footer-text-color: #{$black-color};

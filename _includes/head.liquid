@@ -79,6 +79,15 @@
     id="highlight_theme_dark"
   >
   <script>
+    // Seed default theme only if not set
+    (function(){
+      try {
+        var key = 'theme';
+        if (!localStorage.getItem(key)) {
+          localStorage.setItem(key, '{{ site.default_theme_setting | default: 'light' }}');
+        }
+      } catch (e) {}
+    })();
     initTheme();
   </script>
 {% endif %}
