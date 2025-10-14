@@ -1092,11 +1092,15 @@ footer.sticky-bottom {
           margin-bottom: 0.5rem;
 
           a {
-            color: white;
+            color: inherit; /* inherit from parent abbr inline style */
 
             &:hover {
               text-decoration: none;
             }
+          }
+
+          div {
+            color: inherit; /* inherit for non-linked venue names */
           }
         }
 

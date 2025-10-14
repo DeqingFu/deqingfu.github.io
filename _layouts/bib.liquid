@@ -5,22 +5,18 @@
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
-          {% assign venue_style = null %}
           {% assign venue_bg = site.data.venues[entry.abbr].color %}
           {% assign badge_text = site.data.venues[entry.abbr].text_color | default: '#ffffff' %}
-          {% if venue_bg != blank %}
-            {% assign venue_style = 'style="background-color:' | append: venue_bg | append: '; color:' | append: badge_text | append: ';"' %}
-          {%- endif -%}
           <abbr
             class="badge rounded w-100"
-            {% if venue_style %}
-              {{ venue_style }}
+            {% if venue_bg != blank %}
+              style="background-color:{{ venue_bg }};"
             {% endif -%}
           >
             {% if site.data.venues[entry.abbr].url %}
-              <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
+              <a href="{{ site.data.venues[entry.abbr].url }}" style="color:{{ badge_text }} !important;">{{ entry.abbr }}</a>
             {% else %}
-              <div>{{- entry.abbr -}}</div>
+              <div style="color:{{ badge_text }};">{{- entry.abbr -}}</div>
             {% endif %}
           </abbr>
         {% else %}
