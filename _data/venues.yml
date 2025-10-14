@@ -4,3 +4,39 @@
 
 "AI Driven Simulation":
   color: "#009f36"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#B31B1B" # arXiv red
+
+"ICLR":
+  url: https://iclr.cc/
+  color: "#1F8AC0" # blue
+
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#00A37A" # green
+
+"NIPS":
+  url: https://neurips.cc/
+  color: "#00A37A" # alias
+
+"NAACL":
+  url: https://naacl.org/
+  color: "#0055A4" # navy blue
+
+"EMNLP":
+  url: https://www.emnlp.org/
+  color: "#D35400" # orange
+
+"COLM":
+  url: https://www.aclweb.org/anthology/
+  color: "#6C3483" # purple
+
+"ICML":
+  url: https://icml.cc/
+  color: "#1E8449" # green
+
+"CVPR":
+  url: https://cvpr.thecvf.com/
+  color: "#2874A6" # blue
