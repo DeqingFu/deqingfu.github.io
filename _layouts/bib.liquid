@@ -273,7 +273,7 @@
         <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>
       {% endif %}
       {% if entry.blog %}
-        <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
+        <a href="{{ entry.blog }}" class="publication-link" style="margin-right: 0.5rem; text-decoration: none;"><i class="fa-solid fa-pen-nib" style="margin-right: 4px;"></i>Blog</a>
       {% endif %}
       {% if entry.code %}
         <a href="{{ entry.code }}" class="publication-link code-link" style="margin-right: 0.5rem; text-decoration: none;"
@@ -300,7 +300,7 @@
         {% endif %}
       {% endif %}
       {% if entry.website %}
-        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+        <a href="{{ entry.website }}" class="publication-link" style="margin-right: 0.5rem; text-decoration: none;"><i class="fa-solid fa-globe" style="margin-right: 4px;"></i>Website</a>
       {% endif %}
       {% if entry.huggingface_models %}
         <a href="{{ entry.huggingface_models }}" class="publication-link hf-link" style="margin-right: 0.5rem; text-decoration: none;"
