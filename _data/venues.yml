@@ -1,42 +1,35 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
-
-"AI Driven Simulation":
-  color: "#009f36"
-
 "arXiv":
-  url: https://arxiv.org/
   color: "#B31B1B" # arXiv red
+  text_color: "#FFD4D4" # light red/pink for dark red bg
 
 "ICLR":
-  url: https://iclr.cc/
   color: "#1F8AC0" # blue
+  text_color: "#D4F1FF" # light cyan for medium blue bg
 
 "NeurIPS":
-  url: https://neurips.cc/
   color: "#00A37A" # green
+  text_color: "#CCFFEE" # light mint for teal bg
 
 "NIPS":
-  url: https://neurips.cc/
   color: "#00A37A" # alias
+  text_color: "#CCFFEE" # light mint for teal bg
 
 "NAACL":
-  url: https://naacl.org/
   color: "#0055A4" # navy blue
+  text_color: "#B8D4FF" # light blue for navy bg
 
 "EMNLP":
-  url: https://www.emnlp.org/
   color: "#D35400" # orange
+  text_color: "#FFE5CC" # light peach for orange bg
 
 "COLM":
-  url: https://www.aclweb.org/anthology/
   color: "#6C3483" # purple
+  text_color: "#E8D4FF" # light lavender for purple bg
 
 "ICML":
-  url: https://icml.cc/
   color: "#1E8449" # green
+  text_color: "#C8F7DC" # light mint for forest green bg
 
 "CVPR":
-  url: https://cvpr.thecvf.com/
   color: "#2874A6" # blue
+  text_color: "#D0E8FF" # light sky blue for blue bg
