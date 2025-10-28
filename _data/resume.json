@@ -1,0 +1,124 @@
+{
+  "basics": {
+    "name": "Deqing Fu",
+    "label": "Ph.D. Candidate in Computer Science",
+    "email": "deqingfu@usc.edu",
+    "location": {
+      "address": "Ginsburg Hall, USC",
+      "postalCode": "90089",
+      "city": "Los Angeles",
+      "countryCode": "US",
+      "region": "CA"
+    },
+    "profiles": []
+  },
+  "education": [
+    {
+      "institution": "University of Southern California",
+      "area": "Computer Science",
+      "studyType": "Ph.D.",
+      "startDate": "2022-09-01",
+      "endDate": "",
+      "score": "",
+      "courses": [],
+      "description": "Advisors: Vatsal Sharan & Robin Jia"
+    },
+    {
+      "institution": "University of Chicago",
+      "area": "Statistics",
+      "studyType": "S.M.",
+      "startDate": "2020-09-01",
+      "endDate": "2022-06-01",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "University of Chicago",
+      "area": "Mathematics, Computer Science, Statistics",
+      "studyType": "S.B.",
+      "startDate": "2016-09-01",
+      "endDate": "2020-06-01",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "work": [
+    {
+      "name": "Bluelight AI",
+      "position": "Student Researcher",
+      "startDate": "2025-06-01",
+      "endDate": "",
+      "summary": "Hosts: John Carlsson, Jakob Hansen, Gunnar Carlsson",
+      "highlights": []
+    },
+    {
+      "name": "Simons Institute at UC Berkeley",
+      "position": "Visiting Graduate Student",
+      "startDate": "2024-09-01",
+      "endDate": "2024-12-01",
+      "summary": "Program: Modern Paradigms in Generalization",
+      "highlights": []
+    },
+    {
+      "name": "Meta Llama Team",
+      "position": "Research Scientist Intern",
+      "startDate": "2024-05-01",
+      "endDate": "2024-12-01",
+      "summary": "Host: Lawrence Chen; Peers: Tong Xiao, Rui Wang, and Pengchuan Zhang.",
+      "highlights": []
+    },
+    {
+      "name": "Google",
+      "position": "Software Engineering Intern",
+      "startDate": "2023-05",
+      "endDate": "2023-08",
+      "summary": "Team: Bard (now Gemini) Multilingual.",
+      "highlights": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "Viterbi Best Research Assistant Award",
+      "date": "2025",
+      "awarder": "USC",
+      "summary": "One per department"
+    },
+    {
+      "title": "SoCalNLP Symposium 2023 Best Paper Award",
+      "date": "2023",
+      "awarder": "SoCalNLP"
+    },
+    {
+      "title": "Provost’s Fellowship",
+      "date": "2022",
+      "awarder": "USC"
+    },
+    {
+      "title": "Susanne H. Rudolph Scholarship",
+      "date": "2020",
+      "awarder": "UChicago"
+    },
+    {
+      "title": "Liew Family College Research Fellows Fund",
+      "date": "2020",
+      "awarder": "UChicago"
+    },
+    {
+      "title": "Dean's List",
+      "date": "2016 ~ 2020",
+      "awarder": "UChicago"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "",
+      "keywords": ["C/C++", "Python", "LaTeX", "MATLAB", "R", "Java", "CUDA"]
+    },
+    {
+      "name": "Frameworks",
+      "level": "",
+      "keywords": ["PyTorch", "TensorFlow", "Keras", "JAX", "HuggingFace"]
+    }
+  ]
+}
