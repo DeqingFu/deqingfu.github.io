@@ -17,14 +17,14 @@
       "institution": "University of Southern California",
       "area": "Computer Science",
       "studyType": "Ph.D.",
-      "startDate": "2022-09-01",
+      "startDate": "2022-08-15",
       "endDate": "",
       "score": "",
       "courses": [],
       "description": "Advisors: Vatsal Sharan & Robin Jia"
     },
     {
-      "institution": "The University of Chicago",
+      "institution": "University of Chicago",
       "area": "Statistics",
       "studyType": "S.M.",
       "startDate": "2020-09-01",
@@ -33,7 +33,7 @@
       "courses": []
     },
     {
-      "institution": "The University of Chicago",
+      "institution": "University of Chicago",
       "area": "Mathematics (with Honors), Computer Science (with Honors)",
       "studyType": "S.B.",
       "startDate": "2016-09-01",
@@ -89,24 +89,24 @@
       "awarder": "SoCalNLP"
     },
     {
-      "title": "Provost’s Fellowship",
+      "title": "Provost's Fellowship",
       "date": "2022",
       "awarder": "University of Southern California (USC)"
     },
     {
       "title": "Susanne H. Rudolph Scholarship",
       "date": "2020",
-      "awarder": "The University of Chicago (UChicago)"
+      "awarder": "University of Chicago (UChicago)"
     },
     {
       "title": "Liew Family College Research Fellows Fund",
       "date": "2020",
-      "awarder": "The University of Chicago (UChicago)"
+      "awarder": "University of Chicago (UChicago)"
     },
     {
       "title": "Dean's List",
       "date": "2016 ~ 2020",
-      "awarder": "The University of Chicago (UChicago)"
+      "awarder": "University of Chicago (UChicago)"
     }
   ],
   "skills": [
