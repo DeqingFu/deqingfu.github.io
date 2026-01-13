@@ -19,10 +19,10 @@ This is **Deqing Fu** and I'm a fourth-year Ph.D. candidate in Computer Science 
 My research focuses on understanding large language models from algorithmic and theoretical perspectives, as well as developing methods for multimodal learning and synthetic data generation. You can find my publications on [Google Scholar](https://scholar.google.com/citations?user=fsbgfqEAAAAJ&hl=en) and my recent CV [here](/assets/pdf/curriculum_vitae_deqing.pdf).
 
 ###### **Algorithmic Perspectives on Large Language Models**
-- Can Transformers learn algorithms simply from data? ([NeurIPS 2024](https://arxiv.org/abs/2310.17086), [ArXiv](https://arxiv.org/abs/2510.19753))
+- Can Transformers learn algorithms simply from data? ([NeurIPS 2024](https://arxiv.org/abs/2310.17086), [arXiv 2025](https://arxiv.org/abs/2510.19753))
 - Arithmetic in pretrained LLMs: memorization vs. mechanisms? ([NeurIPS 2024](https://arxiv.org/abs/2406.03445), [arXiv 2025](https://fouriernumber.github.io))
 - What distinguishes Transformers from other architectures? ([ICLR 2025](https://arxiv.org/abs/2403.06925))
-- Decision theory for LLM reasoning under uncertainty ([ICLR 2025 Spotlight](https://DeLLMa.github.io), [ArXiv](https://arxiv.org/abs/2601.07767))
+- Decision theory for LLM reasoning under uncertainty ([ICLR 2025 Spotlight](https://DeLLMa.github.io), [arXiv 2026](https://arxiv.org/abs/2601.07767))
 
 ###### **Synthetic Data and Multimodal Learning**
 - Modality sensitivity in Multimodal LLMs ([COLM 2024](https://arxiv.org/abs/2404.01266))
