@@ -20,11 +20,18 @@ My research focuses on understanding large language models from algorithmic and 
 
 ###### **Algorithmic Perspectives on Large Language Models**
 - Can Transformers learn algorithms simply from data? ([NeurIPS 2024](https://arxiv.org/abs/2310.17086), [arXiv 2025](https://arxiv.org/abs/2510.19753))
-- Arithmetic in pretrained LLMs: memorization vs. mechanisms? ([NeurIPS 2024](https://arxiv.org/abs/2406.03445), [arXiv 2025](https://fouriernumber.github.io))
+- Arithmetic in pretrained LLMs: memorization vs. mechanisms? ([NeurIPS 2024](https://arxiv.org/abs/2406.03445), [arXiv 2025](https://arxiv.org/abs/2502.09741))
 - What distinguishes Transformers from other architectures? ([ICLR 2025](https://arxiv.org/abs/2403.06925))
-- Decision theory for LLM reasoning under uncertainty ([ICLR 2025 Spotlight](https://DeLLMa.github.io), [arXiv 2026](https://arxiv.org/abs/2601.07767))
 
-###### **Synthetic Data and Multimodal Learning**
+###### **Interpretability and Alignment**
+- Decision theory for LLM reasoning under uncertainty ([ICLR 2025 Spotlight](https://DeLLMa.github.io), [arXiv 2026](https://arxiv.org/abs/2601.07767))
+- Visual understanding with textual steering vectors ([arXiv 2025](https://arxiv.org/abs/2505.14071))
+- Transparency in reasoning models via SAEs ([arXiv 2025](https://arxiv.org/abs/2506.09967))
+- Cross-Layer Transcoders for Qwen models ([Tech Report](https://qwen3.bluelightai.com))
+
+###### **Multimodal Models and Applications**
 - Modality sensitivity in Multimodal LLMs ([COLM 2024](https://arxiv.org/abs/2404.01266))
 - VLM feedback for Text-to-Image generation ([NAACL 2025](https://arxiv.org/abs/2311.17946))
-- Token-level reward models (TLDR) for reducing hallucinations ([ICLR 2025](https://arxiv.org/abs/2410.04734))
+- Token-level reward models for reducing hallucinations ([ICLR 2025](https://arxiv.org/abs/2410.04734))
+- Personalization through task-agnostic visual history ([NeurIPS 2025](https://arxiv.org/abs/2411.16034))
+- Interleaved vision-language reasoning dataset ([arXiv 2025](https://arxiv.org/abs/2507.16746))
