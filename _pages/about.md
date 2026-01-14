@@ -25,13 +25,13 @@ My research focuses on understanding large language models from algorithmic and 
 
 ###### **Interpretability and Alignment**
 - Decision theory for LLM reasoning under uncertainty ([ICLR 2025 Spotlight](https://DeLLMa.github.io), [arXiv 2026](https://arxiv.org/abs/2601.07767))
-- Visual understanding with textual steering vectors ([arXiv 2025](https://arxiv.org/abs/2505.14071))
+- Visual understanding and alignment with textual steering vectors ([arXiv 2025](https://arxiv.org/abs/2505.14071))
 - Transparency in reasoning models via SAEs ([arXiv 2025](https://arxiv.org/abs/2506.09967))
 - Cross-Layer Transcoders for Qwen models ([Tech Report](https://qwen3.bluelightai.com))
 
 ###### **Multimodal Models and Applications**
-- Modality sensitivity in Multimodal LLMs ([COLM 2024](https://arxiv.org/abs/2404.01266))
-- VLM feedback for Text-to-Image generation ([NAACL 2025](https://arxiv.org/abs/2311.17946))
 - Token-level reward models for reducing hallucinations ([ICLR 2025](https://arxiv.org/abs/2410.04734))
+- VLM feedback for Text-to-Image generation ([NAACL 2025](https://arxiv.org/abs/2311.17946))
+- Modality sensitivity in Multimodal LLMs ([COLM 2024](https://arxiv.org/abs/2404.01266))
 - Personalization through task-agnostic visual history ([NeurIPS 2025](https://arxiv.org/abs/2411.16034))
 - Interleaved vision-language reasoning dataset ([arXiv 2025](https://arxiv.org/abs/2507.16746))
