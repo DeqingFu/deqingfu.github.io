@@ -20,7 +20,7 @@ My research focuses on understanding large language models from algorithmic and 
 
 ###### **Algorithmic Perspectives on Large Language Models**
 - Can Transformers learn algorithms simply from data? ([NeurIPS 2024](https://arxiv.org/abs/2310.17086), [arXiv 2025](https://arxiv.org/abs/2510.19753))
-- Arithmetic in pretrained LLMs: memorization vs. mechanisms? ([NeurIPS 2024](https://arxiv.org/abs/2406.03445), [arXiv 2025](https://arxiv.org/abs/2502.09741))
+- Arithmetic in pretrained LLMs: memorization vs. mechanisms? ([NeurIPS 2024](https://arxiv.org/abs/2406.03445), [ICLR 2026](https://arxiv.org/abs/2502.09741))
 - What distinguishes Transformers from other architectures? ([ICLR 2025](https://arxiv.org/abs/2403.06925))
 
 ###### **Interpretability and Alignment**
@@ -34,4 +34,4 @@ My research focuses on understanding large language models from algorithmic and 
 - VLM feedback for Text-to-Image generation ([NAACL 2025](https://arxiv.org/abs/2311.17946))
 - Modality sensitivity in Multimodal LLMs ([COLM 2024](https://arxiv.org/abs/2404.01266))
 - Personalization through task-agnostic visual history ([NeurIPS 2025](https://arxiv.org/abs/2411.16034))
-- Interleaved vision-language reasoning dataset ([arXiv 2025](https://arxiv.org/abs/2507.16746))
+- Interleaved vision-language reasoning dataset ([ICLR 2026](https://arxiv.org/abs/2507.16746))
