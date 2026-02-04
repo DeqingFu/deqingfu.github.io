@@ -1058,11 +1058,11 @@ footer.sticky-bottom {
     }
   }
 
-  // Blue section headings
+  // Section headings
   h2.section-blue,
   .post h2.section-blue,
   article h2.section-blue {
-    color: #007bff !important;
+    color: var(--global-theme-color) !important;
   }
 
   h2.bibliography {
