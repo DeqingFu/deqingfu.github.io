@@ -59,7 +59,7 @@
     url: https://kaiyuyue.com/
 
 "zhu":
-  - firstname: ["Wang Bill"]
+  - firstname: ["Wang Bill", "Wang"]
     url: https://billzhu.me/
 
 "zhou":
@@ -77,10 +77,6 @@
 "asilis":
   - firstname: ["Julian"]
     url: https://jasilis.com/
-
-"zhu":
-  - firstname: ["Wang"]
-    url: https://billzhu.me/
 
 "rashtchian":
   - firstname: ["Cyrus"]
