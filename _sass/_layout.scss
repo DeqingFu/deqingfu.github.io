@@ -62,6 +62,8 @@ body.sticky-bottom-footer {
 
 .container {
   max-width: $max-content-width;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 // Profile
