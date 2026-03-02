@@ -25,7 +25,7 @@ My research focuses on understanding large language models from algorithmic and 
 
 ###### **Interpretability and Alignment**
 - Decision theory for LLM reasoning under uncertainty ([ICLR 2025 Spotlight](https://DeLLMa.github.io), [arXiv 2026](https://arxiv.org/abs/2601.07767))
-- Steering vectors for visual understanding ([arXiv 2025](https://arxiv.org/abs/2505.14071), and privacy-preserving synthetic data generation ([arXiv 2026](https://arxiv.org/abs/2602.21218))
+- Steering vectors for visual understanding ([arXiv 2025](https://arxiv.org/abs/2505.14071)), and privacy-preserving synthetic data generation ([arXiv 2026](https://arxiv.org/abs/2602.21218))
 - Mechanistic interpretability via SAEs and transcoders ([arXiv 2025](https://arxiv.org/abs/2506.09967), [Tech Report](https://qwen3.bluelightai.com))
 
 ###### **Multimodal Models and Applications**
