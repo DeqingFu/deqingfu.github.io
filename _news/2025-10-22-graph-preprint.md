@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-New preprint: Transformers Provably Learn Algorithmic Solutions for Graph Connectivity, But Only with the Right Data <a href="https://arxiv.org/abs/2510.19753">ArXiv</a>.
+New preprint: <a href="https://arxiv.org/abs/2510.19753">Transformers Provably Learn Algorithmic Solutions for Graph Connectivity, But Only with the Right Data</a>.
