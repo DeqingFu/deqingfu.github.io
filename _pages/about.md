@@ -29,8 +29,6 @@ My research focuses on understanding large language models from algorithmic and 
 - Mechanistic interpretability via SAEs and transcoders ([arXiv 2025](https://arxiv.org/abs/2506.09967), [Tech Report](https://qwen3.bluelightai.com))
 
 ###### **Multimodal Models and Applications**
-- Token-level reward models for reducing hallucinations ([ICLR 2025](https://arxiv.org/abs/2410.04734))
-- VLM feedback for Text-to-Image generation ([NAACL 2025](https://arxiv.org/abs/2311.17946))
+- Multimodal rewards for improving generation quality: token-level hallucination reduction ([ICLR 2025](https://arxiv.org/abs/2410.04734)) and Text-to-Image alignment ([NAACL 2025](https://arxiv.org/abs/2311.17946))
 - Modality sensitivity in Multimodal LLMs ([COLM 2024](https://arxiv.org/abs/2404.01266))
-- Personalization through task-agnostic visual history ([NeurIPS 2025](https://arxiv.org/abs/2411.16034))
-- Interleaved vision-language reasoning dataset ([ICLR 2026](https://arxiv.org/abs/2507.16746))
+- Large-scale dataset for visual reasoning with images([ICLR 2026](https://arxiv.org/abs/2507.16746))
