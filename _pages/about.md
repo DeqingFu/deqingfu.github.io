@@ -16,7 +16,7 @@ social: false # includes social icons at the bottom of the page
 ---
 This is **Deqing Fu** and I'm a fourth-year Ph.D. candidate in Computer Science at the <span style="color:#990000;"><strong class="fraktur-hover" data-text="University of Southern California">University of Southern California</strong>  (USC)</span>. My main research interests are **deep learning theory**, **natural language processing**, and the **interpretability of AI systems**. I'm (co-)advised by [Prof. Vatsal Sharan](https://vatsalsharan.github.io) of [USC Theory Group](https://viterbi-web.usc.edu/~cstheory/) and [Prof. Robin Jia](https://robinjia.github.io) of [Allegro Lab](https://allegro-lab.github.io) within [USC NLP Group](https://nlp.usc.edu), and I'm working closely with [Prof. Mahdi Soltanolkotabi](https://viterbi-web.usc.edu/~soltanol/index.html) and [Prof. Shang-Hua Teng](https://viterbi-web.usc.edu/~shanghua/). Before USC, I completed my undergraduate degree in Mathematics (with honors) and my master’s in Statistics at the <span style="color:#800000;"><strong class="fraktur-hover" data-text="University of Chicago">University of Chicago</strong></span>.
 
-My research focuses on understanding large language models from algorithmic and theoretical perspectives, as well as developing methods for multimodal learning and synthetic data generation. You can find my publications on [Google Scholar](https://scholar.google.com/citations?user=fsbgfqEAAAAJ&hl=en) and my recent CV [here](/assets/pdf/curriculum_vitae_deqing.pdf).
+My research focuses on understanding large language models from algorithmic and theoretical perspectives, as well as developing practical methods in interpretability, synthetic data generation, and multimodal learning. You can find my publications on [Google Scholar](https://scholar.google.com/citations?user=fsbgfqEAAAAJ&hl=en) and my recent CV [here](/assets/pdf/curriculum_vitae_deqing.pdf).
 
 ###### **Algorithmic Perspectives on Large Language Models**
 - Can Transformers learn algorithms simply from data? ([NeurIPS 2024](https://arxiv.org/abs/2310.17086), [arXiv 2025](https://arxiv.org/abs/2510.19753))
@@ -25,9 +25,8 @@ My research focuses on understanding large language models from algorithmic and 
 
 ###### **Interpretability and Alignment**
 - Decision theory for LLM reasoning under uncertainty ([ICLR 2025 Spotlight](https://DeLLMa.github.io), [arXiv 2026](https://arxiv.org/abs/2601.07767))
-- Visual understanding and alignment with textual steering vectors ([arXiv 2025](https://arxiv.org/abs/2505.14071))
-- Transparency in reasoning models via SAEs ([arXiv 2025](https://arxiv.org/abs/2506.09967))
-- Cross-Layer Transcoders for Qwen models ([Tech Report](https://qwen3.bluelightai.com))
+- Steering vectors for visual understanding ([arXiv 2025](https://arxiv.org/abs/2505.14071), and privacy-preserving synthetic data generation ([arXiv 2026](https://arxiv.org/abs/2602.21218))
+- Mechanistic interpretability via SAEs and transcoders ([arXiv 2025](https://arxiv.org/abs/2506.09967), [Tech Report](https://qwen3.bluelightai.com))
 
 ###### **Multimodal Models and Applications**
 - Token-level reward models for reducing hallucinations ([ICLR 2025](https://arxiv.org/abs/2410.04734))

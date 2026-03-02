@@ -1,11 +1,17 @@
 ---
-@misc{epsvec2026,
+@inproceedings{epsvec2026,
   title={EPSVec: Efficient and Private Synthetic Data Generation via Dataset Vectors},
   author={Banayeeanzade, Amin and Yang, Qingchuan and Fu, Deqing and Hong, Spencer and Babinsky, Erin and Samuel, Alfy and Kumar, Anoop and Jia, Robin and Karimireddy, Sai Praneeth},
+  booktitle={arXiv},
   year={2026},
+  arxiv={2602.21218},
+  url={https://arxiv.org/abs/2602.21218},
+  abstract={High-quality data is essential for modern machine learning, yet many valuable corpora are sensitive and cannot be freely shared. Synthetic data offers a practical substitute for downstream development, and large language models (LLMs) have emerged as powerful engines for generating it. However, existing private text generation methods are severely inefficient: they are data-intensive, computationally slow, and often require large private corpora or batch sizes to achieve usable quality. We introduce EPSVec, a differentially-private lightweight alternative that steers LLM generation using dataset vectors---directions in activation space that capture the distributional gap between private data and public priors. EPSVec extracts and sanitizes steering vectors just once and then performs standard decoding. This decouples the privacy budget from generation, enabling arbitrarily many synthetic samples without additional privacy cost and yielding strong fidelity even in low-data regimes. Our experiments demonstrate that EPSVec outperforms existing baselines in distributional alignment and downstream utility, particularly in low-data regimes, while significantly reducing computational overhead.},
+  selected={false},
   category={preprint},
-  abbr={preprint},
   pdf={EpsVec_26.pdf},
+  abbr={arXiv},
+  preview={epsvec.png},
 }
 
 @misc{wang2026llmdecisionsfaithfulverbal,
