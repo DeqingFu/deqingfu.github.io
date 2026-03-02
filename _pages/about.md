@@ -18,17 +18,39 @@ This is **Deqing Fu** and I'm a fourth-year Ph.D. candidate in Computer Science 
 
 My research focuses on understanding large language models from algorithmic and theoretical perspectives, as well as developing practical methods in interpretability, synthetic data generation, and multimodal learning. You can find my publications on [Google Scholar](https://scholar.google.com/citations?user=fsbgfqEAAAAJ&hl=en) and my recent CV [here](/assets/pdf/curriculum_vitae_deqing.pdf).
 
+<div class="research-sections" markdown="1">
+
 ###### **Algorithmic Perspectives on Large Language Models**
-- Can Transformers learn algorithms simply from data? ([NeurIPS 2024](https://arxiv.org/abs/2310.17086), [arXiv 2025](https://arxiv.org/abs/2510.19753))
-- Arithmetic in pretrained LLMs: memorization vs. mechanisms? ([NeurIPS 2024](https://arxiv.org/abs/2406.03445), [ICLR 2026](https://arxiv.org/abs/2502.09741))
-- What distinguishes Transformers from other architectures? ([ICLR 2025](https://arxiv.org/abs/2403.06925))
+- Can Transformers learn algorithms simply from data?
+  ([NeurIPS 2024](https://arxiv.org/abs/2310.17086),
+  [arXiv 2025](https://arxiv.org/abs/2510.19753))
+- Arithmetic in pretrained LLMs: memorization vs. mechanisms?
+  ([NeurIPS 2024](https://arxiv.org/abs/2406.03445),
+  [ICLR 2026](https://arxiv.org/abs/2502.09741))
+- What distinguishes Transformers from other architectures?
+  ([ICLR 2025](https://arxiv.org/abs/2403.06925))
 
 ###### **Interpretability and Alignment**
-- Decision theory for LLM reasoning under uncertainty ([ICLR 2025 Spotlight](https://DeLLMa.github.io), [arXiv 2026](https://arxiv.org/abs/2601.07767))
-- Steering vectors for improved visual understanding ([arXiv 2025](https://arxiv.org/abs/2505.14071)), and for efficient and privacy-preserving synthetic data generation ([arXiv 2026](https://arxiv.org/abs/2602.21218))
-- Mechanistic interpretability via SAEs and transcoders ([arXiv 2025](https://arxiv.org/abs/2506.09967), [Tech Report](https://qwen3.bluelightai.com))
+- Decision theory for LLM reasoning under uncertainty
+  ([ICLR 2025 Spotlight](https://DeLLMa.github.io),
+  [arXiv 2026](https://arxiv.org/abs/2601.07767))
+- Steering vectors for improved visual understanding
+  ([arXiv 2025](https://arxiv.org/abs/2505.14071)), and for efficient
+  and privacy-preserving synthetic data generation
+  ([arXiv 2026](https://arxiv.org/abs/2602.21218))
+- Mechanistic interpretability via SAEs and transcoders
+  ([arXiv 2025](https://arxiv.org/abs/2506.09967),
+  [Tech Report](https://qwen3.bluelightai.com))
 
 ###### **Multimodal Models and Applications**
-- Multimodal rewards for improving generation quality: token-level hallucination reduction ([ICLR 2025](https://arxiv.org/abs/2410.04734)) and Text-to-Image alignment ([NAACL 2025](https://arxiv.org/abs/2311.17946))
-- Modality sensitivity in Multimodal LLMs ([COLM 2024](https://arxiv.org/abs/2404.01266))
-- Large-scale dataset for visual reasoning with images([ICLR 2026](https://arxiv.org/abs/2507.16746))
+- Multimodal rewards for improving generation quality:
+  token-level hallucination reduction
+  ([ICLR 2025](https://arxiv.org/abs/2410.04734)) and
+  Text-to-Image alignment
+  ([NAACL 2025](https://arxiv.org/abs/2311.17946))
+- Modality sensitivity in Multimodal LLMs
+  ([COLM 2024](https://arxiv.org/abs/2404.01266))
+- Large-scale dataset for visual reasoning with images
+  ([ICLR 2026](https://arxiv.org/abs/2507.16746))
+
+</div>
