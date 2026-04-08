@@ -18,6 +18,10 @@
   color: "#00A37A" # alias
   text_color: "#CCFFEE" # light mint for teal bg
 
+"ACL":
+  color:  "#0055A4" # navy blue
+  text_color: "#B8D4FF" # light blue for navy bg
+
 "NAACL":
   color: "#0055A4" # navy blue
   text_color: "#B8D4FF" # light blue for navy bg

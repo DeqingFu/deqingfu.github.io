@@ -35,7 +35,7 @@ My research focuses on understanding large language models from algorithmic and 
   ([ICLR 2025 Spotlight](https://DeLLMa.github.io),
   [arXiv 2026](https://arxiv.org/abs/2601.07767))
 - Steering vectors for improved visual understanding
-  ([arXiv 2025](https://arxiv.org/abs/2505.14071)), and for efficient
+  ([ACL 2026](https://arxiv.org/abs/2505.14071)), and for efficient
   and privacy-preserving synthetic data generation
   ([arXiv 2026](https://arxiv.org/abs/2602.21218))
 - Mechanistic interpretability via SAEs and transcoders
