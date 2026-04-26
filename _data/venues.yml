@@ -41,3 +41,7 @@
 "CVPR":
   color: "#2874A6" # blue
   text_color: "#D0E8FF" # light sky blue for blue bg
+
+"Tech Report":
+  color: "#5D6D7E" # slate gray
+  text_color: "#EAECEE" # light gray for slate bg
