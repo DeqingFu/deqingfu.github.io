@@ -255,9 +255,9 @@
       {% endif %}
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
-          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          <a href="{{ entry.pdf }}" class="publication-link" style="margin-right: 0.5rem; text-decoration: none;"><i class="fa-solid fa-file-pdf" style="margin-right: 4px;"></i>PDF</a>
         {% else %}
-          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="publication-link" style="margin-right: 0.5rem; text-decoration: none;"><i class="fa-solid fa-file-pdf" style="margin-right: 4px;"></i>PDF</a>
         {% endif %}
       {% endif %}
       {% if entry.supp %}
