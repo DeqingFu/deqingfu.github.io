@@ -23,7 +23,7 @@ My research focuses on understanding large language models from algorithmic and 
 ###### **Algorithmic Perspectives on Large Language Models**
 - Can Transformers learn algorithms simply from data?
   ([NeurIPS 2024](https://arxiv.org/abs/2310.17086),
-  [arXiv 2025](https://arxiv.org/abs/2510.19753))
+  [ICML 2026](https://arxiv.org/abs/2510.19753))
 - Arithmetic in pretrained LLMs: memorization vs. mechanisms?
   ([NeurIPS 2024](https://arxiv.org/abs/2406.03445),
   [ICLR 2026](https://arxiv.org/abs/2502.09741))
@@ -37,7 +37,7 @@ My research focuses on understanding large language models from algorithmic and 
 - Steering vectors for improved visual understanding
   ([ACL 2026](https://arxiv.org/abs/2505.14071)), and for efficient
   and privacy-preserving synthetic data generation
-  ([arXiv 2026](https://arxiv.org/abs/2602.21218))
+  ([ICML 2026](https://arxiv.org/abs/2602.21218))
 - Mechanistic interpretability via SAEs and transcoders
   ([arXiv 2025](https://arxiv.org/abs/2506.09967),
   [Tech Report](https://qwen3.bluelightai.com))
