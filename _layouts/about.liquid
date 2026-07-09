@@ -42,6 +42,7 @@ layout: default
 
   .job-market-banner strong {
     color: var(--global-theme-color) !important;
+    font-weight: 700 !important;
   }
 
   /* ── Research Highlights liquid glass wrapper ──────────────────────── */
@@ -154,36 +155,27 @@ layout: default
     font-size: 0.72rem;
     padding: 0.08em 0.42em;
     border-radius: 3px;
-    background: rgba(128, 0, 0, 0.07);
+    background: transparent;
     color: var(--global-theme-color);
     text-decoration: none !important;
-    border: 1px solid rgba(128, 0, 0, 0.2);
+    border: none;
     font-weight: 600;
     vertical-align: middle;
     margin: 0 1px;
-    transition: background 0.15s, color 0.15s, border-color 0.15s;
+    transition: background 0.15s;
     letter-spacing: 0.01em;
     white-space: nowrap;
   }
 
-  a.venue-tag:hover,
-  a.venue-tag:hover * {
-    background: var(--global-theme-color) !important;
-    color: #fff !important;
-    border-color: var(--global-theme-color) !important;
+  a.venue-tag:hover {
+    background: rgba(128, 0, 0, 0.08) !important;
+    color: var(--global-theme-color) !important;
     text-decoration: none !important;
   }
 
-  html[data-theme="dark"] a.venue-tag {
-    background: rgba(255, 255, 255, 0.07);
-    border-color: rgba(255, 255, 255, 0.18);
-  }
-
-  html[data-theme="dark"] a.venue-tag:hover,
-  html[data-theme="dark"] a.venue-tag:hover * {
-    background: var(--global-theme-color) !important;
-    color: #fff !important;
-    border-color: var(--global-theme-color) !important;
+  html[data-theme="dark"] a.venue-tag:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: var(--global-theme-color) !important;
   }
 
   /* ── News glass wrapper ────────────────────────────────────────────── */

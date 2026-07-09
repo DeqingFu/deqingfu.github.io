@@ -35,7 +35,8 @@ My research focuses on understanding large language models from algorithmic and 
 <a class="venue-tag" href="https://arxiv.org/abs/2510.19753">ICML 2026</a>)</li>
 <li>Arithmetic in pretrained LLMs: memorization vs. mechanisms?
 (<a class="venue-tag" href="https://arxiv.org/abs/2406.03445">NeurIPS 2024</a>,
-<a class="venue-tag" href="https://arxiv.org/abs/2502.09741">ICLR 2026</a>)</li>
+<a class="venue-tag" href="https://arxiv.org/abs/2502.09741">ICLR 2026</a>,
+<a class="venue-tag" href="https://arxiv.org/abs/2604.20817">COLM 2026</a>)</li>
 <li>What distinguishes Transformers from other architectures?
 (<a class="venue-tag" href="https://arxiv.org/abs/2403.06925">ICLR 2025</a>)</li>
 </ul>
@@ -52,7 +53,7 @@ My research focuses on understanding large language models from algorithmic and 
 and privacy-preserving synthetic data generation
 (<a class="venue-tag" href="https://arxiv.org/abs/2602.21218">ICML 2026</a>)</li>
 <li>Mechanistic interpretability via SAEs and transcoders
-(<a class="venue-tag" href="https://arxiv.org/abs/2506.09967">arXiv 2025</a>,
+(<a class="venue-tag" href="https://arxiv.org/abs/2506.09967">COLM 2026</a>,
 <a class="venue-tag" href="https://qwen3.bluelightai.com">Tech Report</a>)</li>
 </ul>
 </details>
