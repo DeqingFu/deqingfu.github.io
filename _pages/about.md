@@ -14,13 +14,20 @@ news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
-This is **Deqing Fu** and I'm a fourth-year Ph.D. candidate in Computer Science at the <span style="color:#990000;"><strong class="fraktur-hover" data-text="University of Southern California">University of Southern California</strong>  (USC)</span>. My main research interests are **theoretical foundations of large language models** and **multimodal LLMs**. I'm (co-)advised by [Prof. Vatsal Sharan](https://vatsalsharan.github.io) of [USC Theory Group](https://viterbi-web.usc.edu/~cstheory/) and [Prof. Robin Jia](https://robinjia.github.io) of [Allegro Lab](https://allegro-lab.github.io) within [USC NLP Group](https://nlp.usc.edu), and I'm working closely with [Prof. Mahdi Soltanolkotabi](https://viterbi-web.usc.edu/~soltanol/index.html). During my Ph.D. studies, I spent time at Google and Meta as a student researcher. Before USC, I completed my undergraduate degree in Mathematics (with honors) and my master’s in Statistics at the <span style="color:#800000;"><strong class="fraktur-hover" data-text="University of Chicago">University of Chicago</strong></span>.
+This is **Deqing Fu** and I'm a last-year PhD candidate in Computer Science at the <span style="color:#990000;"><strong class="fraktur-hover" data-text="University of Southern California">University of Southern California</strong>  (USC)</span>. My main research interests are **theoretical foundations of large language models** and **multimodal LLMs**. I'm (co-)advised by [Prof. Vatsal Sharan](https://vatsalsharan.github.io) of [USC Theory Group](https://viterbi-web.usc.edu/~cstheory/) and [Prof. Robin Jia](https://robinjia.github.io) of [Allegro Lab](https://allegro-lab.github.io) within [USC NLP Group](https://nlp.usc.edu), and I'm working closely with [Prof. Mahdi Soltanolkotabi](https://viterbi-web.usc.edu/~soltanol/index.html). During my Ph.D. studies, I spent time at Google and Meta as a student researcher. Before USC, I completed my undergraduate degree in Mathematics (with honors) and my master’s in Statistics at the <span style="color:#800000;"><strong class="fraktur-hover" data-text="University of Chicago">University of Chicago</strong></span>.
 
 My research focuses on understanding large language models from algorithmic and theoretical perspectives, as well as developing practical methods in interpretability, synthetic data generation, and multimodal learning. You can find my publications on [Google Scholar](https://scholar.google.com/citations?user=fsbgfqEAAAAJ&hl=en) and my recent CV [here](/assets/pdf/curriculum_vitae_deqing.pdf).
 
+<div class="job-market-banner">
+<p class="research-highlights-label">Availability</p>
+<strong>I am on the job market in 2026–2027. Please reach out!</strong>
+</div>
+
+<div class="research-highlights-wrap">
+<p class="research-highlights-label">Research Highlights</p>
 <div class="research-sections">
 
-<details class="research-area" open>
+<details class="research-area">
 <summary>Algorithmic Perspectives on Large Language Models</summary>
 <ul>
 <li>Can Transformers learn algorithms simply from data?
@@ -34,7 +41,7 @@ My research focuses on understanding large language models from algorithmic and 
 </ul>
 </details>
 
-<details class="research-area" open>
+<details class="research-area">
 <summary>Interpretability and Alignment</summary>
 <ul>
 <li>Decision theory for LLM reasoning under uncertainty
@@ -50,7 +57,7 @@ and privacy-preserving synthetic data generation
 </ul>
 </details>
 
-<details class="research-area" open>
+<details class="research-area">
 <summary>Multimodal Models and Applications</summary>
 <ul>
 <li>Multimodal rewards for improving generation quality:
@@ -65,4 +72,5 @@ Text-to-Image alignment
 </ul>
 </details>
 
+</div>
 </div>
