@@ -218,6 +218,7 @@ layout: default
   }
   .news-all-link:hover { color: var(--global-theme-color) !important; }
   .news-glass-wrap .table-responsive { overflow-y: auto; max-height: 320px; }
+  .news-glass-wrap .news { font-size: 0.9rem; }
   .news { color: var(--global-text-color) !important; }
   .news table { color: var(--global-text-color) !important; }
   .news .news-title { color: var(--global-theme-color) !important; }
@@ -239,6 +240,21 @@ layout: default
     .news .table-responsive { border: none !important; box-shadow: none !important; }
     .news tr { border: none !important; }
     .news th { font-weight: bold !important; width: auto !important; min-width: 80px !important; }
+  }
+
+  /* ── Desktop profile photo cap ─────────────────────────────────────── */
+  @media (min-width: 577px) {
+    .profile {
+      max-width: 240px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .job-market-banner,
+    .research-highlights-wrap,
+    .news-glass-wrap {
+      margin-right: calc(240px + 2rem);
+    }
   }
 
   /* ── Mobile profile photo ──────────────────────────────────────────── */
