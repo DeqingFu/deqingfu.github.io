@@ -18,39 +18,51 @@ This is **Deqing Fu** and I'm a fourth-year Ph.D. candidate in Computer Science 
 
 My research focuses on understanding large language models from algorithmic and theoretical perspectives, as well as developing practical methods in interpretability, synthetic data generation, and multimodal learning. You can find my publications on [Google Scholar](https://scholar.google.com/citations?user=fsbgfqEAAAAJ&hl=en) and my recent CV [here](/assets/pdf/curriculum_vitae_deqing.pdf).
 
-<div class="research-sections" markdown="1">
+<div class="research-sections">
 
-###### **Algorithmic Perspectives on Large Language Models**
-- Can Transformers learn algorithms simply from data?
-  ([NeurIPS 2024](https://arxiv.org/abs/2310.17086),
-  [ICML 2026](https://arxiv.org/abs/2510.19753))
-- Arithmetic in pretrained LLMs: memorization vs. mechanisms?
-  ([NeurIPS 2024](https://arxiv.org/abs/2406.03445),
-  [ICLR 2026](https://arxiv.org/abs/2502.09741))
-- What distinguishes Transformers from other architectures?
-  ([ICLR 2025](https://arxiv.org/abs/2403.06925))
+<details class="research-area" open>
+<summary>Algorithmic Perspectives on Large Language Models</summary>
+<ul>
+<li>Can Transformers learn algorithms simply from data?
+(<a class="venue-tag" href="https://arxiv.org/abs/2310.17086">NeurIPS 2024</a>,
+<a class="venue-tag" href="https://arxiv.org/abs/2510.19753">ICML 2026</a>)</li>
+<li>Arithmetic in pretrained LLMs: memorization vs. mechanisms?
+(<a class="venue-tag" href="https://arxiv.org/abs/2406.03445">NeurIPS 2024</a>,
+<a class="venue-tag" href="https://arxiv.org/abs/2502.09741">ICLR 2026</a>)</li>
+<li>What distinguishes Transformers from other architectures?
+(<a class="venue-tag" href="https://arxiv.org/abs/2403.06925">ICLR 2025</a>)</li>
+</ul>
+</details>
 
-###### **Interpretability and Alignment**
-- Decision theory for LLM reasoning under uncertainty
-  ([ICLR 2025 Spotlight](https://DeLLMa.github.io),
-  [arXiv 2026](https://arxiv.org/abs/2601.07767))
-- Steering vectors for improved visual understanding
-  ([ACL 2026](https://arxiv.org/abs/2505.14071)), and for efficient
-  and privacy-preserving synthetic data generation
-  ([ICML 2026](https://arxiv.org/abs/2602.21218))
-- Mechanistic interpretability via SAEs and transcoders
-  ([arXiv 2025](https://arxiv.org/abs/2506.09967),
-  [Tech Report](https://qwen3.bluelightai.com))
+<details class="research-area" open>
+<summary>Interpretability and Alignment</summary>
+<ul>
+<li>Decision theory for LLM reasoning under uncertainty
+(<a class="venue-tag" href="https://DeLLMa.github.io">ICLR 2025 Spotlight</a>,
+<a class="venue-tag" href="https://arxiv.org/abs/2601.07767">arXiv 2026</a>)</li>
+<li>Steering vectors for improved visual understanding
+(<a class="venue-tag" href="https://arxiv.org/abs/2505.14071">ACL 2026</a>), and for efficient
+and privacy-preserving synthetic data generation
+(<a class="venue-tag" href="https://arxiv.org/abs/2602.21218">ICML 2026</a>)</li>
+<li>Mechanistic interpretability via SAEs and transcoders
+(<a class="venue-tag" href="https://arxiv.org/abs/2506.09967">arXiv 2025</a>,
+<a class="venue-tag" href="https://qwen3.bluelightai.com">Tech Report</a>)</li>
+</ul>
+</details>
 
-###### **Multimodal Models and Applications**
-- Multimodal rewards for improving generation quality:
-  token-level hallucination reduction
-  ([ICLR 2025](https://arxiv.org/abs/2410.04734)) and
-  Text-to-Image alignment
-  ([NAACL 2025](https://arxiv.org/abs/2311.17946))
-- Modality sensitivity in Multimodal LLMs
-  ([COLM 2024](https://arxiv.org/abs/2404.01266))
-- Large-scale dataset for visual reasoning with images
-  ([ICLR 2026](https://arxiv.org/abs/2507.16746))
+<details class="research-area" open>
+<summary>Multimodal Models and Applications</summary>
+<ul>
+<li>Multimodal rewards for improving generation quality:
+token-level hallucination reduction
+(<a class="venue-tag" href="https://arxiv.org/abs/2410.04734">ICLR 2025</a>) and
+Text-to-Image alignment
+(<a class="venue-tag" href="https://arxiv.org/abs/2311.17946">NAACL 2025</a>)</li>
+<li>Modality sensitivity in Multimodal LLMs
+(<a class="venue-tag" href="https://arxiv.org/abs/2404.01266">COLM 2024</a>)</li>
+<li>Large-scale dataset for visual reasoning with images
+(<a class="venue-tag" href="https://arxiv.org/abs/2507.16746">ICLR 2026</a>)</li>
+</ul>
+</details>
 
 </div>
