@@ -299,6 +299,30 @@ layout: default
     .research-area li { font-size: 0.88rem; }
     a.venue-tag { font-size: 0.68rem; }
   }
+
+  /* Content-first homepage with minimal framing. */
+  .job-market-banner {
+    margin: 0.7rem 0 1.5rem;
+    padding: 0.15rem 0 0.15rem 0.8rem;
+    border: 0;
+    border-left: 3px solid var(--global-theme-color);
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  .news-glass-wrap {
+    margin-top: 2rem;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  .news-glass-wrap .table-responsive { max-height: none; }
 </style>
 <div class="post">
   <header class="post-header">
@@ -355,7 +379,7 @@ layout: default
     {% endif %}
 
     <!-- Publications -->
-    <div style="margin-top: 4rem;"></div>
+    <div style="margin-top: 2.5rem;"></div>
     <h2 id="publications-title" class="section-blue">
       <strong>Selected Publications</strong>
     </h2>

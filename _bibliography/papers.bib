@@ -10,6 +10,7 @@
   selected={false},
   category={conference},
   abbr={COLM},
+  preview={topl.png},
 }
 
 @inproceedings{ye2025transformerslearnheuristicsgraph,
@@ -39,6 +40,7 @@
   category={preprint},
   note={*Equal Contribution},
   abbr={arXiv},
+  preview={vase.png},
 }
 
 @inproceedings{fu2026convergent,
@@ -71,7 +73,7 @@
   preview={epsvec.png},
 }
 
-@misc{wang2026llmdecisionsfaithfulverbal,
+@inproceedings{wang2026llmdecisionsfaithfulverbal,
       title={Are LLM Decisions Faithful to Verbal Confidence?}, 
       author={Jiawei Wang and Yanfei Zhou and Siddartha Devic and Deqing Fu},
       year={2026},
@@ -79,8 +81,9 @@
       archivePrefix={arXiv},
       primaryClass={cs.LG},
       url={https://arxiv.org/abs/2601.07767}, 
-      category={preprint},
-      abbr={arXiv},
+      booktitle={Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+      category={conference},
+      abbr={EMNLP},
       preview={abstain.png},
       abstract={We investigate whether the decisions made by large language models (LLMs) are faithful to their verbal confidence expressions. Our findings reveal a significant misalignment between LLMs' stated confidence and their actual decision-making behavior, highlighting challenges in interpreting LLM outputs for high-stakes applications.},
 }
@@ -198,7 +201,7 @@
   url={https://arxiv.org/abs/2310.17086},
   code={https://github.com/DeqingFu/transformers-icl-second-order},
   abstract={Transformers have shown remarkable in-context learning (ICL) capabilities. In this work, we study the ability of transformers to perform ICL for linear regression. We show that transformers trained on linear regression tasks with diverse covariates learn algorithms that achieve second-order convergence rates, outperforming first-order methods like gradient descent. Our theoretical analysis and experiments demonstrate that transformers can learn to implement algorithms similar to Newton's method and preconditioned gradient descent.},
-  selected={true},
+  selected={false},
   category={conference},
   note={<span style="color: orange;">SoCalNLP Symposium 2023 Best Paper Award</span>},
   preview={transformer-icl.png},
@@ -213,7 +216,7 @@
   arxiv={2406.03445},
   url={https://arxiv.org/abs/2406.03445},
   abstract={We study how pre-trained large language models compute arithmetic tasks. We find that these models use Fourier features to represent and manipulate numbers, providing insights into their computational mechanisms.},
-  selected={true},
+  selected={false},
   category={conference},
   preview={fourier.png},
   abbr={NeurIPS}
@@ -228,7 +231,7 @@
   url={https://arxiv.org/abs/2404.01266},
   website={https://isobench.github.io},
   abstract={We introduce IsoBench, a benchmark for evaluating whether multimodal models are sensitive to the input modality for semantically equivalent problems presented in different formats.},
-  selected={true},
+  selected={false},
   category={conference},
   note={*Equal Contribution},
   preview={isobench.png},
@@ -243,7 +246,7 @@
   arxiv={2403.06925},
   url={https://arxiv.org/abs/2403.06925},
   abstract={We investigate the types of functions that transformers learn and find that they preferentially learn low sensitivity functions. We explore the implications of this finding for understanding transformer capabilities and limitations.},
-  selected={true},
+  selected={false},
   category={conference},
   note={*Equal Contribution},
   preview={sensitivity.png},
@@ -260,7 +263,7 @@
   code={https://github.com/DeLLMa/DeLLMa},
   website={https://dellma.github.io/},
   abstract={We introduce DeLLMa, a framework for using large language models to make decisions under uncertainty by combining classical decision theory with modern language models.},
-  selected={true},
+  selected={false},
   category={conference},
   note={<span style="color: orange;">Spotlight (Top 5.1%)</span>, *Equal Contribution},
   preview={dellma.png},
@@ -275,7 +278,7 @@
   arxiv={2311.17946},
   url={https://arxiv.org/abs/2311.17946},
   abstract={We propose DreamSync, a method for improving text-to-image generation by using feedback from vision-language models to align generated images with text prompts.},
-  selected={true},
+  selected={false},
   category={conference},
   note={*Equal Contribution},
   preview={dreamsync.png},
@@ -298,6 +301,3 @@
   preview={scene.png},
   abbr={EMNLP}
 }
-
-
-
