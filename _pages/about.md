@@ -16,9 +16,9 @@ social: false # includes social icons at the bottom of the page
 ---
 I'm **Deqing Fu**, a final-year Computer Science PhD candidate at the [University of Southern California](https://www.usc.edu). I study the theoretical foundations of large language models, interpretability, and multimodal reasoning. I am advised by [Vatsal Sharan](https://vatsalsharan.github.io) and [Robin Jia](https://robinjia.github.io), and work closely with [Mahdi Soltanolkotabi](https://viterbi-web.usc.edu/~soltanol/index.html). I have also been a student researcher at Google and Meta.
 
-<div class="profile-links-row">
-  [<a class="profile-link-btn" href="https://scholar.google.com/citations?user=fsbgfqEAAAAJ&hl=en">Google Scholar</a>]
-  [<a class="profile-link-btn" href="/assets/pdf/curriculum_vitae_deqing.pdf">CV</a>]
+<div class="home-links">
+  <a href="https://scholar.google.com/citations?user=fsbgfqEAAAAJ&hl=en">Google Scholar</a>
+  <a href="/assets/pdf/curriculum_vitae_deqing.pdf">CV</a>
 </div>
 
 <div class="job-market-banner">

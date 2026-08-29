@@ -1,0 +1,4 @@
+# Local builds use original images. Production keeps the responsive WebP
+# pipeline configured in _config.yml, where ImageMagick is available.
+imagemagick:
+  enabled: false

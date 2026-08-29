@@ -2,328 +2,94 @@
 layout: default
 ---
 <style>
-  /* ── Section headings ──────────────────────────────────────────────── */
-  .section-blue,
-  .post .section-blue,
-  article .section-blue,
-  div.post h2.section-blue,
-  div.post h2.section-blue strong,
-  .section-blue strong,
-  #news-title, #news-title strong,
-  #blog-title, #blog-title strong,
-  #preprints-title, #preprints-title strong,
-  #publications-title, #publications-title strong {
-    color: var(--global-theme-color) !important;
-  }
-
-  /* ── Profile links row ─────────────────────────────────────────────── */
-  .profile-links-row {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-    margin: 0.4rem 0 0.8rem;
-    font-size: 0.85rem;
-  }
-
-  .profile-link-btn {
-    color: #990000 !important;
-    text-decoration: none !important;
-    font-weight: 600;
-    transition: opacity 0.15s;
-  }
-
-  .profile-link-btn:hover {
-    opacity: 0.75;
-    text-decoration: none !important;
-  }
-
-  /* ── Job market banner ─────────────────────────────────────────────── */
-  .job-market-banner {
-    margin-top: 1rem;
-    padding: 1.1rem 1.1rem 0.9rem;
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.55);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow:
-      0 4px 24px rgba(0, 0, 0, 0.07),
-      inset 0 1px 0 rgba(255, 255, 255, 0.75);
-    font-size: 0.95rem;
-    color: var(--global-text-color) !important;
-  }
-
-  html[data-theme="dark"] .job-market-banner {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(255, 255, 255, 0.12);
-    box-shadow:
-      0 4px 24px rgba(0, 0, 0, 0.3),
-      inset 0 1px 0 rgba(255, 255, 255, 0.08);
-  }
-
-  .job-market-banner strong {
-    color: var(--global-theme-color) !important;
-    font-weight: 700 !important;
-  }
-
-  /* ── Research Highlights liquid glass wrapper ──────────────────────── */
-  .research-highlights-wrap {
-    margin-top: 1.2rem;
-    padding: 1.1rem 1.1rem 0.7rem;
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.55);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow:
-      0 4px 24px rgba(0, 0, 0, 0.07),
-      inset 0 1px 0 rgba(255, 255, 255, 0.75);
-  }
-
-  html[data-theme="dark"] .research-highlights-wrap {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(255, 255, 255, 0.12);
-    box-shadow:
-      0 4px 24px rgba(0, 0, 0, 0.3),
-      inset 0 1px 0 rgba(255, 255, 255, 0.08);
-  }
-
-  .research-highlights-label {
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--global-text-color-light) !important;
-    margin-bottom: 0.65rem;
-  }
-
-  /* ── Collapsible research areas ────────────────────────────────────── */
-  .research-sections {
-    margin-top: 0;
-  }
-
-  .research-area {
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 8px;
-    margin-bottom: 0.45rem;
-    background: rgba(255, 255, 255, 0.6);
-    transition: box-shadow 0.2s ease;
-  }
-
-  html[data-theme="dark"] .research-area {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.08);
-  }
-
-  .research-area:hover {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-  }
-
-  .research-area summary {
-    cursor: pointer;
-    padding: 0.65rem 1rem;
-    font-weight: 600;
-    font-size: 0.9rem;
-    color: var(--global-theme-color);
-    list-style: none;
+  .home-links {
     display: flex;
-    align-items: center;
-    user-select: none;
-    letter-spacing: 0.015em;
+    gap: 0.8rem;
+    margin: 0.4rem 0 1rem;
+    font-size: 0.9rem;
   }
 
-  .research-area summary::-webkit-details-marker { display: none; }
-
-  .research-area summary::before {
-    content: '›';
-    font-size: 1.25rem;
-    font-weight: 300;
-    line-height: 1;
-    transition: transform 0.22s ease;
-    display: inline-block;
-    transform: rotate(0deg);
-    flex-shrink: 0;
-    margin-right: 0.5rem;
-    color: var(--global-text-color-light);
+  .home-links a {
+    font-weight: 600;
+    text-decoration: none;
   }
 
-  .research-area[open] summary::before {
-    transform: rotate(90deg);
+  .job-market-banner {
+    margin: 0.75rem 0 1.5rem;
+    padding-left: 0.8rem;
+    border-left: 3px solid var(--global-theme-color);
+    font-size: 0.95rem;
   }
 
-  .research-area ul {
+  .job-market-banner strong,
+  .home-section-title {
+    color: var(--global-theme-color);
+  }
+
+  .home-section {
+    margin-top: 2.5rem;
+  }
+
+  .home-section-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 0.6rem;
+  }
+
+  .home-section-title {
     margin: 0;
-    padding: 0.05rem 1.25rem 0.75rem 2.25rem;
-    max-width: 80ch;
-    animation: raFadeIn 0.18s ease both;
+    font-size: 1.35rem;
+    font-weight: 700;
   }
 
-  @keyframes raFadeIn {
-    from { opacity: 0; transform: translateY(-5px); }
-    to   { opacity: 1; transform: translateY(0); }
+  .home-section-link {
+    font-size: 0.8rem;
+    text-decoration: none;
   }
 
-  .research-area li {
-    margin-bottom: 0.45rem;
-    font-size: 0.92rem;
-    line-height: 1.6;
+  .home-news .table-responsive {
+    max-height: none !important;
+    overflow: visible;
+  }
+
+  .home-news .news,
+  .home-news table {
+    font-size: 0.9rem;
     color: var(--global-text-color);
   }
 
-  /* ── Venue badge links ─────────────────────────────────────────────── */
-  a.venue-tag {
-    display: inline-block;
-    font-size: 0.72rem;
-    padding: 0.08em 0.42em;
-    border-radius: 3px;
-    background: transparent;
-    color: var(--global-theme-color);
-    text-decoration: none !important;
-    border: none;
-    font-weight: 600;
-    vertical-align: middle;
-    margin: 0 1px;
-    transition: background 0.15s;
-    letter-spacing: 0.01em;
-    white-space: nowrap;
+  .home-news th {
+    min-width: 105px;
+    padding-left: 0;
+    color: var(--global-text-color-light);
+    font-weight: 500;
   }
 
-  a.venue-tag:hover {
-    background: rgba(128, 0, 0, 0.08) !important;
-    color: var(--global-theme-color) !important;
-    text-decoration: none !important;
-  }
-
-  html[data-theme="dark"] a.venue-tag:hover {
-    background: rgba(255, 255, 255, 0.1) !important;
-    color: var(--global-theme-color) !important;
-  }
-
-  /* ── News glass wrapper ────────────────────────────────────────────── */
-  .news-glass-wrap {
-    margin-top: 1.2rem;
-    padding: 1.1rem 1.1rem 0.7rem;
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.55);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow:
-      0 4px 24px rgba(0, 0, 0, 0.07),
-      inset 0 1px 0 rgba(255, 255, 255, 0.75);
-  }
-
-  html[data-theme="dark"] .news-glass-wrap {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(255, 255, 255, 0.12);
-    box-shadow:
-      0 4px 24px rgba(0, 0, 0, 0.3),
-      inset 0 1px 0 rgba(255, 255, 255, 0.08);
-  }
-
-  /* ── News section ──────────────────────────────────────────────────── */
-  .glass-label-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 0.65rem;
-  }
-  .glass-label-row .research-highlights-label { margin-bottom: 0; }
-  .news-all-link {
-    font-size: 0.68rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    color: var(--global-text-color-light) !important;
-    text-decoration: none !important;
-    text-transform: uppercase;
-  }
-  .news-all-link:hover { color: var(--global-theme-color) !important; }
-  .news-glass-wrap .table-responsive { overflow-y: auto; max-height: 320px; }
-  .news-glass-wrap .news { font-size: 0.9rem; }
-  .news { color: var(--global-text-color) !important; }
-  .news table { color: var(--global-text-color) !important; }
-  .news .news-title { color: var(--global-theme-color) !important; }
-  .news th, .news td { color: var(--global-text-color) !important; }
-  .news p, .news span, .news div { color: var(--global-text-color) !important; }
-
-  @media (max-width: 768px) {
-    .news table, .news .table { font-size: 0.9rem !important; }
-
-    .news td, .news th {
-      color: var(--global-text-color) !important;
-      opacity: 1 !important;
-      visibility: visible !important;
-      font-size: inherit !important;
-      line-height: 1.4 !important;
-      padding: 0.5rem 0.25rem !important;
-    }
-
-    .news .table-responsive { border: none !important; box-shadow: none !important; }
-    .news tr { border: none !important; }
-    .news th { font-weight: bold !important; width: auto !important; min-width: 80px !important; }
-  }
-
-  /* ── Desktop profile photo cap ─────────────────────────────────────── */
   @media (min-width: 577px) {
-    .profile {
-      max-width: 240px;
-    }
+    .profile { max-width: 220px; }
   }
 
   @media (min-width: 992px) {
     .job-market-banner,
-    .research-highlights-wrap,
-    .news-glass-wrap {
-      margin-right: calc(240px + 2rem);
+    .home-news {
+      margin-right: calc(220px + 2rem);
     }
   }
 
-  /* ── Mobile profile photo ──────────────────────────────────────────── */
   @media (max-width: 576px) {
-    .news td, .news th, .news table, .news .table {
-      color: var(--global-text-color) !important;
-      background-color: transparent !important;
-    }
-    .news { background-color: transparent !important; }
-
     .profile {
       float: right !important;
       max-width: 100px !important;
       margin-left: 0.9rem !important;
       margin-bottom: 0.5rem !important;
     }
+
     .profile img { width: 100% !important; }
-
-    .research-area summary { font-size: 0.83rem; padding: 0.6rem 0.85rem; }
-    .research-area ul { padding-left: 1.75rem; }
-    .research-area li { font-size: 0.88rem; }
-    a.venue-tag { font-size: 0.68rem; }
+    .home-news th { min-width: 82px; }
   }
-
-  /* Content-first homepage with minimal framing. */
-  .job-market-banner {
-    margin: 0.7rem 0 1.5rem;
-    padding: 0.15rem 0 0.15rem 0.8rem;
-    border: 0;
-    border-left: 3px solid var(--global-theme-color);
-    border-radius: 0;
-    background: transparent;
-    box-shadow: none;
-    backdrop-filter: none;
-  }
-
-  .news-glass-wrap {
-    margin-top: 2rem;
-    padding: 0;
-    border: 0;
-    border-radius: 0;
-    background: transparent;
-    box-shadow: none;
-    backdrop-filter: none;
-  }
-
-  .news-glass-wrap .table-responsive { max-height: none; }
 </style>
+
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">
@@ -341,15 +107,10 @@ layout: default
           {% if page.profile.image_circular %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
+          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
+          {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image cache_bust=true %}
         {% endif %}
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
@@ -359,36 +120,32 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
-    <!-- News -->
     {% if page.news and site.announcements.enabled %}
-      <div class="news-glass-wrap">
-        <div class="glass-label-row">
-          <p class="research-highlights-label">News</p>
-          <a href="{{ '/news/' | relative_url }}" class="news-all-link">all →</a>
+      <section class="home-section home-news" aria-labelledby="news-title">
+        <div class="home-section-header">
+          <h2 id="news-title" class="home-section-title">News</h2>
+          <a href="{{ '/news/' | relative_url }}" class="home-section-link">All news →</a>
         </div>
         {% include news.liquid limit=true %}
-      </div>
+      </section>
     {% endif %}
 
-    <!-- Latest posts -->
     {% if site.latest_posts.enabled %}
-      <h2 id="blog-title" class="section-blue">
-        <strong>Recent Blog Posts</strong>
-      </h2>
-      {% include latest_posts.liquid %}
+      <section class="home-section" aria-labelledby="blog-title">
+        <h2 id="blog-title" class="home-section-title">Recent Blog Posts</h2>
+        {% include latest_posts.liquid %}
+      </section>
     {% endif %}
 
-    <!-- Publications -->
-    <div style="margin-top: 2.5rem;"></div>
-    <h2 id="publications-title" class="section-blue">
-      <strong>Selected Publications</strong>
-    </h2>
-    <p style="margin-top: -0.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
-      See <a href="{{ '/publications/' | relative_url }}">full list</a> or <a href="https://scholar.google.com/citations?user={{ site.scholar.scholar_userid }}" target="_blank">Google Scholar</a> for all publications.
-    </p>
-    <div class="publications mb-5">
-      {% bibliography -f papers -q @*[selected=true] %}
-    </div>
+    <section class="home-section" aria-labelledby="publications-title">
+      <div class="home-section-header">
+        <h2 id="publications-title" class="home-section-title">Selected Publications</h2>
+        <a href="{{ '/publications/' | relative_url }}" class="home-section-link">All publications →</a>
+      </div>
+      <div class="publications mb-5">
+        {% bibliography -f papers -q @*[selected=true] %}
+      </div>
+    </section>
 
     {% if site.newsletter.enabled and site.footer_fixed %}
       {% include scripts/newsletter.liquid center=true %}
