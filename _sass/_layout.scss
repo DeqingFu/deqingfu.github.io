@@ -8,7 +8,9 @@ body {
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
   font-family: 'EB Garamond', Georgia, 'Times New Roman', Times, serif;
-  font-weight: 300; /* slightly heavier default weight */
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65;
 
   h1,
   h2,
@@ -22,13 +24,9 @@ body {
 
 /* When sans font mode is active */
 html.font-sans body {
-  font-family: 'Montserrat', 'EB Garamond', Georgia, 'Times New Roman', Times, serif;
-  font-weight: 300; /* keep sans default slightly heavier too */
-}
-
-/* Enlarge only body text in serif mode by 15% (UI using rem stays unchanged) */
-html:not(.font-sans) body {
-  font-size: 1.15rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 /* Font toggle visual hint (inherits navbar link sizing/alignment) */
@@ -38,21 +36,21 @@ html:not(.font-sans) body {
 }
 
 html.font-sans #font-toggle {
-  font-family: 'Montserrat', 'EB Garamond', Georgia, 'Times New Roman', serif;
-  font-weight: 700;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 600;
 }
 
-/* Make the toggle icon match nav text size */
 #font-toggle-img {
-  height: 1em; /* same as text height */
-  width: auto;
-  vertical-align: middle;
   display: inline-block;
+  width: 1.65rem;
+  height: 1.65rem;
+  object-fit: cover;
+  vertical-align: middle;
 }
 
 body.fixed-top-nav {
   // Add some padding for the nav-bar.
-  padding-top: 56px;
+  padding-top: 68px;
 }
 
 body.sticky-bottom-footer {

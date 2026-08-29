@@ -2,23 +2,175 @@
 layout: default
 ---
 <style>
-  .home-links {
+  .profile-socials {
     display: flex;
-    gap: 0.8rem;
-    margin: 0.4rem 0 1rem;
-    font-size: 0.9rem;
+    justify-content: center;
+    gap: 0.3rem;
+    margin-top: 0.65rem;
+    width: 100%;
+    white-space: nowrap;
   }
 
-  .home-links a {
-    font-weight: 600;
+  .profile-socials a {
+    display: inline-grid;
+    width: 1.5rem;
+    height: 1.5rem;
+    flex: 0 0 1.5rem;
+    place-items: center;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+    line-height: 1;
     text-decoration: none;
+    transition: color 0.15s ease, transform 0.15s ease;
+  }
+
+  .profile-socials a:hover {
+    color: var(--global-theme-color);
+    background: transparent !important;
+    box-shadow: none !important;
+    transform: translateY(-1px) !important;
+  }
+
+  .liquid-card {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow:
+      0 4px 24px rgba(0, 0, 0, 0.07),
+      inset 0 1px 0 rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  html[data-theme='dark'] .liquid-card {
+    border-color: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow:
+      0 4px 24px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08);
   }
 
   .job-market-banner {
-    margin: 0.75rem 0 1.5rem;
-    padding-left: 0.8rem;
-    border-left: 3px solid var(--global-theme-color);
+    margin: 1rem 0 1.5rem;
+    padding: 1.1rem 1.1rem 0.9rem;
+    color: var(--global-text-color) !important;
     font-size: 0.95rem;
+  }
+
+  .research-highlights-wrap {
+    margin: 0 0 1.5rem;
+    padding: 1.1rem 1.1rem 0.7rem;
+  }
+
+  .job-market-banner p:last-child {
+    margin-bottom: 0;
+  }
+
+  .card-label {
+    margin: 0 0 0.65rem;
+    color: var(--global-text-color-light) !important;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .research-area {
+    margin-bottom: 0.45rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.6);
+    transition: box-shadow 0.2s ease;
+  }
+
+  html[data-theme='dark'] .research-area {
+    border-color: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .research-area:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  .research-area summary {
+    display: flex;
+    align-items: center;
+    padding: 0.65rem 1rem;
+    color: var(--global-theme-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    letter-spacing: 0.015em;
+  }
+
+  .research-area summary::-webkit-details-marker { display: none; }
+
+  .research-area summary::before {
+    content: '›';
+    display: inline-block;
+    flex-shrink: 0;
+    margin-right: 0.5rem;
+    color: var(--global-text-color-light);
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1;
+    transform: rotate(0deg);
+    transition: transform 0.22s ease;
+  }
+
+  .research-area[open] summary::before { transform: rotate(90deg); }
+
+  .research-area ul {
+    margin: 0;
+    max-width: 80ch;
+    padding: 0.05rem 1.25rem 0.75rem 2.25rem;
+    animation: research-area-fade-in 0.18s ease both;
+  }
+
+  @keyframes research-area-fade-in {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .research-area li {
+    margin-bottom: 0.45rem;
+    color: var(--global-text-color);
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+
+  a.venue-tag {
+    display: inline-block;
+    margin: 0 1px;
+    padding: 0.08em 0.42em;
+    border: 0;
+    border-radius: 3px;
+    background: transparent;
+    box-shadow: none !important;
+    color: var(--global-theme-color) !important;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-decoration: none !important;
+    vertical-align: middle;
+    white-space: nowrap;
+    transition: background 0.15s;
+  }
+
+  a.venue-tag:hover {
+    background: rgba(128, 0, 0, 0.08) !important;
+    box-shadow: none !important;
+    color: var(--global-theme-color) !important;
+    text-decoration: none !important;
+    transform: none !important;
   }
 
   .job-market-banner strong,
@@ -66,27 +218,49 @@ layout: default
     font-weight: 500;
   }
 
+  .home-news.liquid-card {
+    margin-top: 1.2rem;
+    padding: 1.1rem 1.1rem 0.55rem;
+  }
+
   @media (min-width: 577px) {
     .profile { max-width: 220px; }
   }
 
+  @media (min-width: 577px) and (max-width: 767.98px) {
+    .profile-socials { gap: 0.12rem; }
+    .profile-socials a {
+      width: 1.25rem;
+      height: 1.25rem;
+      flex-basis: 1.25rem;
+      font-size: 0.78rem;
+    }
+  }
+
   @media (min-width: 992px) {
     .job-market-banner,
-    .home-news {
+    .research-highlights-wrap {
       margin-right: calc(220px + 2rem);
     }
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: 575.98px) {
     .profile {
       float: right !important;
-      max-width: 100px !important;
+      width: 132px !important;
+      max-width: 38vw !important;
       margin-left: 0.9rem !important;
       margin-bottom: 0.5rem !important;
     }
 
     .profile img { width: 100% !important; }
+    .profile-socials { justify-content: space-between; gap: 0; }
+    .profile-socials a { width: 1.25rem; height: 1.25rem; font-size: 0.78rem; flex: 0 0 1.25rem; }
     .home-news th { min-width: 82px; }
+    .research-area summary { padding: 0.6rem 0.85rem; font-size: 0.83rem; }
+    .research-area ul { padding-left: 1.75rem; }
+    .research-area li { font-size: 0.88rem; }
+    a.venue-tag { font-size: 0.68rem; }
   }
 </style>
 
@@ -111,6 +285,13 @@ layout: default
           {% endif %}
           {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
           {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image cache_bust=true %}
+          <div class="profile-socials" aria-label="Profile links">
+            <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+            <a href="{{ '/assets/pdf/curriculum_vitae_deqing.pdf' | relative_url }}" title="CV" aria-label="CV" target="_blank" rel="noopener"><i class="ai ai-cv"></i></a>
+            <a href="https://github.com/{{ site.github_username }}" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://x.com/{{ site.x_username }}" title="X" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
         {% endif %}
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
@@ -121,7 +302,7 @@ layout: default
     <div class="clearfix">{{ content }}</div>
 
     {% if page.news and site.announcements.enabled %}
-      <section class="home-section home-news" aria-labelledby="news-title">
+      <section class="home-section home-news liquid-card" aria-labelledby="news-title">
         <div class="home-section-header">
           <h2 id="news-title" class="home-section-title">News</h2>
           <a href="{{ '/news/' | relative_url }}" class="home-section-link">All news →</a>

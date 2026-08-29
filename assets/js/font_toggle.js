@@ -1,4 +1,4 @@
-// Toggle between serif (EB Garamond) and sans (Montserrat) and persist preference
+// Toggle between serif (EB Garamond) and UChicago's recommended sans fallback.
 (function () {
   const STORAGE_KEY = 'fontPref'; // 'serif' | 'sans'
 
@@ -22,15 +22,18 @@
         const baseurl = btn.getAttribute('data-baseurl') || '';
         const base = baseurl.replace(/\/$/, '');
         // In current state "pref", show the icon representing the ACTIVE mode
-        // - serif (EB Garamond) -> yolk
-        // - sans (Montserrat)   -> taro
+        // - serif (EB Garamond) -> Taro
+        // - sans (Helvetica)    -> Yolk
         const src = pref === 'sans'
-          ? `${base}/assets/img/logo_yolk.png`
-          : `${base}/assets/img/logo_taro.png`;
+          ? `${base}/assets/img/logo_yolk_nav.png`
+          : `${base}/assets/img/logo_taro_nav.png`;
         if (img.getAttribute('src') !== src) {
           img.setAttribute('src', src);
         }
-        img.setAttribute('alt', pref === 'sans' ? 'Sans font (Montserrat)' : 'Serif font (EB Garamond)');
+        img.setAttribute(
+          'alt',
+          pref === 'sans' ? 'Yolk, showing Helvetica sans mode' : 'Taro, showing EB Garamond serif mode'
+        );
       }
     }
   }
@@ -38,7 +41,7 @@
   function getPref() {
     const p = localStorage.getItem(STORAGE_KEY);
     if (p === 'sans' || p === 'serif') return p;
-  return 'sans';
+    return 'sans';
   }
 
   function setPref(p) {
@@ -53,8 +56,8 @@
   document.addEventListener('DOMContentLoaded', function () {
     const btn = document.getElementById('font-toggle');
     if (!btn) return;
-  // Ensure icon is correct after DOM is ready
-  applyFont(getPref());
+    // Ensure icon is correct after DOM is ready
+    applyFont(getPref());
     btn.addEventListener('click', function (e) {
       e.preventDefault();
       const next = getPref() === 'serif' ? 'sans' : 'serif';

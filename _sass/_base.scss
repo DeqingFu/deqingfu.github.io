@@ -249,10 +249,12 @@ ul.task-list input[type="checkbox"] {
 // Navbar customization
 
 .navbar {
-  box-shadow: none;
-  border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
-  opacity: 0.95;
+  min-height: 62px;
+  border-bottom: 1px solid color-mix(in srgb, var(--global-divider-color) 70%, transparent);
+  background: color-mix(in srgb, var(--global-bg-color) 82%, transparent);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.035);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
 }
 
 .navbar .dropdown-menu {
@@ -289,34 +291,61 @@ ul.task-list input[type="checkbox"] {
   }
 
   .navbar-brand {
+    order: 1;
     color: var(--global-text-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin-right: 1.5rem;
+    padding: 0;
+    font-size: 0.92rem;
+    font-weight: 650;
+    letter-spacing: -0.01em;
+  }
+
+  .navbar-collapse {
+    order: 2;
+  }
+
+  .navbar-font-toggle {
+    order: 3;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.25rem;
+    padding: 0.25rem;
+    line-height: 1;
+
+    &:focus-visible {
+      outline: 2px solid color-mix(in srgb, var(--global-theme-color) 45%, transparent);
+      outline-offset: 2px;
+    }
   }
 
   .navbar-nav .nav-item .nav-link {
-    color: var(--global-text-color);
-    border-radius: 4px;
-    padding: 8px 12px;
-    margin: 0 2px;
-    transition: all 0.3s ease;
+    margin: 0 0.1rem;
+    padding: 0.48rem 0.8rem;
+    border-radius: 999px;
+    color: var(--global-text-color-light);
+    font-size: 0.82rem;
+    font-weight: 550;
+    letter-spacing: 0.01em;
+    transition: color 0.16s ease, background-color 0.16s ease;
 
     &:hover {
-      color: var(--global-hover-color) !important;
-      background-color: color-mix(in srgb, var(--global-hover-color) 10%, transparent);
-      transform: translateY(-1px);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      color: var(--global-theme-color) !important;
+      background: color-mix(in srgb, var(--global-theme-color) 8%, transparent);
     }
   }
 
   .navbar-nav .nav-item.active > .nav-link {
-    background-color: inherit;
-    font-weight: bolder;
+    background: color-mix(in srgb, var(--global-theme-color) 11%, transparent);
+    font-weight: 650;
     color: var(--global-theme-color);
 
     &:hover {
-      color: var(--global-hover-color) !important;
-      background-color: color-mix(in srgb, var(--global-hover-color) 10%, transparent);
-      transform: translateY(-1px);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      color: var(--global-theme-color) !important;
+      background: color-mix(in srgb, var(--global-theme-color) 15%, transparent);
     }
   }
 
@@ -341,6 +370,16 @@ ul.task-list input[type="checkbox"] {
 }
 
 .navbar-toggler {
+  order: 4;
+  margin-left: 0.35rem;
+  padding: 0.45rem;
+  border: 0;
+  border-radius: 10px;
+
+  &:focus {
+    outline: 2px solid color-mix(in srgb, var(--global-theme-color) 35%, transparent);
+  }
+
   .icon-bar {
     display: block;
     width: 22px;
@@ -363,6 +402,49 @@ ul.task-list input[type="checkbox"] {
   .bottom-bar {
     transform: rotate(-45deg);
     transform-origin: 10% 90%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar {
+    min-height: 58px;
+
+    .container {
+      padding-right: 0.75rem !important;
+      padding-left: 0.75rem !important;
+    }
+  }
+
+  .navbar-collapse {
+    order: 4;
+    flex-basis: 100%;
+    margin-top: 0.65rem;
+    padding: 0.6rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 14px;
+    background: var(--global-bg-color);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .navbar-font-toggle {
+    order: 2;
+    margin-left: auto;
+  }
+
+  .navbar-toggler {
+    order: 3;
+    margin-left: 0.2rem;
+  }
+
+  .container[role='main'] {
+    padding-right: 0.9rem !important;
+    padding-left: 0.9rem !important;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    margin: 0.1rem 0 !important;
+    padding: 0.6rem 0.75rem !important;
+    text-align: left;
   }
 }
 
@@ -1111,13 +1193,16 @@ footer.sticky-bottom {
       }
 
       .title {
-        font-family: 'Montserrat', 'EB Garamond', Georgia, 'Times New Roman', serif;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 0.95rem;
+        line-height: 1.35;
         font-weight: 600; /* semi-bold titles in publications */
       }
 
       /* Ensure linked titles are bold too */
       .title a {
-        font-family: 'Montserrat', 'EB Garamond', Georgia, 'Times New Roman', serif;
+        font-family: inherit;
+        font-size: inherit;
         font-weight: 600 !important;
       }
 
