@@ -298,7 +298,7 @@ ul.task-list input[type="checkbox"] {
     gap: 0.65rem;
     margin-right: 1.5rem;
     padding: 0;
-    font-size: 0.92rem;
+    font-size: 1rem;
     font-weight: 650;
     letter-spacing: -0.01em;
   }
@@ -327,7 +327,7 @@ ul.task-list input[type="checkbox"] {
     padding: 0.48rem 0.8rem;
     border-radius: 999px;
     color: var(--global-text-color-light);
-    font-size: 0.82rem;
+    font-size: 0.9rem;
     font-weight: 550;
     letter-spacing: 0.01em;
     transition: color 0.16s ease, background-color 0.16s ease;
@@ -1194,8 +1194,8 @@ footer.sticky-bottom {
 
       .title {
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        font-size: 0.95rem;
-        line-height: 1.35;
+        font-size: 1.07rem;
+        line-height: 1.4;
         font-weight: 600; /* semi-bold titles in publications */
       }
 
