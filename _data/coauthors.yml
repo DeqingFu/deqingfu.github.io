@@ -9,6 +9,8 @@
 "fu":
   - firstname: ["Deqing"]
     url: https://deqingfu.github.io/
+  - firstname: ["Harvey Yiyun"]
+    url: https://harvey-fin.github.io/
 
 "gan":
   - firstname: ["Woody Haosheng"]
@@ -89,3 +91,31 @@
 "guo":
   - firstname: ["Ruohao"]
     url: https://ruohaog.netlify.app/
+
+"belkin":
+  - firstname: ["Mikhail"]
+    url: https://misha.belkin-wang.org/
+
+"chang":
+  - firstname: ["Ting-Yun"]
+    url: https://terarachang.github.io/
+
+"dhingra":
+  - firstname: ["Bhuwan"]
+    url: https://users.cs.duke.edu/~bdhingra/
+
+"thomason":
+  - firstname: ["Jesse"]
+    url: https://jessethomason.com/
+
+"yang":
+  - firstname: ["Chenghao"]
+    url: https://yangalan123.github.io/
+
+"yogatama":
+  - firstname: ["Dani"]
+    url: https://dyogatama.github.io/
+
+"zhang":
+  - firstname: ["Pengchuan"]
+    url: https://pzzhang.github.io/pzzhang/
