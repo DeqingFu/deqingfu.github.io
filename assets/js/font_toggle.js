@@ -1,4 +1,4 @@
-// Toggle between serif (EB Garamond) and UChicago's recommended sans fallback.
+// Toggle between serif (EB Garamond) and a Gotham-style sans stack.
 (function () {
   const STORAGE_KEY = 'fontPref'; // 'serif' | 'sans'
 
@@ -23,7 +23,7 @@
         const base = baseurl.replace(/\/$/, '');
         // In current state "pref", show the icon representing the ACTIVE mode
         // - serif (EB Garamond) -> Taro
-        // - sans (Helvetica)    -> Yolk
+        // - sans (Figtree)     -> Yolk
         const src = pref === 'sans'
           ? `${base}/assets/img/logo_yolk_nav.png`
           : `${base}/assets/img/logo_taro_nav.png`;
@@ -32,7 +32,7 @@
         }
         img.setAttribute(
           'alt',
-          pref === 'sans' ? 'Yolk, showing Helvetica sans mode' : 'Taro, showing EB Garamond serif mode'
+          pref === 'sans' ? 'Yolk, showing Figtree sans mode' : 'Taro, showing EB Garamond serif mode'
         );
       }
     }
