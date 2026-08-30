@@ -212,9 +212,12 @@
     <div class="periodical">
       {{ periodical | strip }}
     </div>
-    <div class="periodical">
-      {{ entry.note | strip }}
-    </div>
+    {% assign display_note = entry.note | default: '' | replace: ', *Equal Contribution', '' | replace: '*Equal Contribution', '' | strip %}
+    {% if display_note != '' %}
+      <div class="periodical publication-note">
+        {{ display_note }}
+      </div>
+    {% endif %}
 
     <!-- Topics section -->
     {% if entry.topics %}

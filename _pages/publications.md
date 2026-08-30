@@ -13,4 +13,6 @@ See my <a href="https://scholar.google.com/citations?user=fsbgfqEAAAAJ&hl=en">Go
 
 {% bibliography %}
 
+<p class="publication-equal-note"><sup>*</sup> Equal contribution.</p>
+
 </div>

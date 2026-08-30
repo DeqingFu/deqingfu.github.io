@@ -1124,6 +1124,17 @@ footer.sticky-bottom {
 .publications {
   margin-top: 2rem;
 
+  .publication-equal-note {
+    margin: -0.15rem 0 0;
+    color: var(--global-text-color-light);
+    font-size: 0.8rem;
+    line-height: 1.35;
+  }
+
+  .publication-equal-note sup {
+    color: inherit;
+  }
+
   h1 {
     color: var(--global-theme-color);
     font-size: 2rem;
