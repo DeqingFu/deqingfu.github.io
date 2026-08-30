@@ -1207,6 +1207,9 @@ footer.sticky-bottom {
       }
 
       .author {
+        font-size: 0.98rem;
+        line-height: 1.45;
+
         a {
           /* Remove ugly underlines from collaborator names */
           border-bottom: none !important;
