@@ -186,7 +186,15 @@ layout: default
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    gap: 0.75rem;
     margin-bottom: 0.6rem;
+  }
+
+  .home-section-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    white-space: nowrap;
   }
 
   .home-section-title {
@@ -260,6 +268,8 @@ layout: default
     .profile img { width: 100% !important; }
     .profile-socials { justify-content: space-between; gap: 0; }
     .profile-socials a { width: 20%; height: 1.85rem; font-size: 1.3rem; flex: 0 0 20%; }
+    .home-section-header { flex-wrap: wrap; }
+    .home-section-actions { width: 100%; justify-content: space-between; }
     .home-news th { min-width: 82px; }
     .research-area summary { padding: 0.65rem 0.85rem; font-size: 0.95rem; }
     .research-area ul { padding-left: 1.75rem; }
@@ -325,9 +335,12 @@ layout: default
     <section class="home-section" aria-labelledby="publications-title">
       <div class="home-section-header">
         <h2 id="publications-title" class="home-section-title">Selected Publications</h2>
-        <a href="{{ '/publications/' | relative_url }}" class="home-section-link">All publications →</a>
+        <div class="home-section-actions">
+          {% include publication_view_toggle.liquid %}
+          <a href="{{ '/publications/' | relative_url }}" class="home-section-link">All publications →</a>
+        </div>
       </div>
-      <div class="publications mb-5">
+      <div class="publications publication-view-enabled mb-5">
         {% bibliography -f papers -q @*[selected=true] %}
         <p class="publication-equal-note"><sup>*</sup> Equal contribution.</p>
       </div>

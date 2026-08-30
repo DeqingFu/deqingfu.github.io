@@ -1,0 +1,34 @@
+{% if include.abbr %}
+  {% assign venue = site.data.venues[include.abbr] %}
+  {% assign venue_bg = venue.color | default: '#800000' %}
+  {% assign venue_text = venue.text_color | default: '#ffffff' %}
+  <abbr
+    class="venue-badge badge rounded{% unless include.compact %} w-100{% endunless %}"
+    title="{{ include.title | default: include.abbr | escape }}"
+    {% if include.compact %}
+      style="--venue-color: {{ venue_bg }};"
+    {% else %}
+      style="background-color: {{ venue_bg }};"
+    {% endif %}
+  >
+    {% if venue.url %}
+      <a
+        class="venue-badge-link"
+        href="{{ venue.url }}"
+        {% if include.compact %}
+          style="color: {{ venue_bg }} !important;"
+        {% else %}
+          style="color: {{ venue_text }} !important;"
+        {% endif %}
+      >{{ include.abbr }}</a>
+    {% else %}
+      <span
+        {% if include.compact %}
+          style="color: {{ venue_bg }};"
+        {% else %}
+          style="color: {{ venue_text }};"
+        {% endif %}
+      >{{- include.abbr -}}</span>
+    {% endif %}
+  </abbr>
+{% endif %}

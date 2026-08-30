@@ -12,6 +12,7 @@ profile:
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
+publication_view_toggle: true
 social: false # includes social icons at the bottom of the page
 ---
 This is **Deqing Fu** and I'm a final-year PhD candidate in Computer Science at the <span style="color:#990000;"><strong>University of Southern California</strong> (USC)</span>. My main research interests are **theoretical foundations of large language models** and **multimodal LLMs**. I'm (co-)advised by [Prof. Vatsal Sharan](https://vatsalsharan.github.io) of [USC Theory Group](https://viterbi-web.usc.edu/~cstheory/) and [Prof. Robin Jia](https://robinjia.github.io) of [Allegro Lab](https://allegro-lab.github.io) within [USC NLP Group](https://nlp.usc.edu), and I'm working closely with [Prof. Mahdi Soltanolkotabi](https://viterbi-web.usc.edu/~soltanol/index.html). During my Ph.D. studies, I spent time at Google and Meta as a student researcher. Before USC, I completed my undergraduate degree in Mathematics (with honors) and my master’s in Statistics at the <span style="color:#800000;"><strong class="fraktur-hover" data-text="University of Chicago">University of Chicago</strong></span>.

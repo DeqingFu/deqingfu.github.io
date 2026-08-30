@@ -308,13 +308,24 @@ ul.task-list input[type="checkbox"] {
   }
 
   .navbar-font-toggle {
-    order: 3;
+    order: 1;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-left: 0.25rem;
-    padding: 0.25rem;
+    margin-right: 1.5rem;
+    margin-left: 0;
+    padding: 0.15rem;
+    border: 0;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
     line-height: 1;
+
+    &:hover {
+      background: transparent !important;
+      box-shadow: none !important;
+      transform: none !important;
+    }
 
     &:focus-visible {
       outline: 2px solid color-mix(in srgb, var(--global-theme-color) 45%, transparent);
@@ -427,13 +438,14 @@ ul.task-list input[type="checkbox"] {
   }
 
   .navbar-font-toggle {
-    order: 2;
-    margin-left: auto;
+    order: 1;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .navbar-toggler {
     order: 3;
-    margin-left: 0.2rem;
+    margin-left: auto;
   }
 
   .container[role='main'] {
@@ -1121,8 +1133,51 @@ footer.sticky-bottom {
 
 // Publications
 
+.publication-view-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.2rem 0 0.5rem;
+}
+
+.publication-view-toggle {
+  display: none;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.2rem 0;
+  border: 0;
+  appearance: none;
+  background: transparent;
+  color: var(--global-text-color-light);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--global-text-color-light) 45%, transparent);
+  text-underline-offset: 0.18em;
+
+  &:hover {
+    color: var(--global-theme-color);
+    text-decoration-color: currentColor;
+  }
+
+  &:focus-visible {
+    outline: 2px solid color-mix(in srgb, var(--global-theme-color) 45%, transparent);
+    outline-offset: 3px;
+  }
+}
+
+html.publication-view-js .publication-view-toggle {
+  display: inline-flex;
+}
+
 .publications {
   margin-top: 2rem;
+
+  .publication-venue-compact {
+    display: none;
+  }
 
   .publication-equal-note {
     margin: -0.15rem 0 0;
@@ -1339,6 +1394,96 @@ footer.sticky-bottom {
     }
     div.award.hidden.open {
       border-color: var(--global-highlight-color);
+    }
+  }
+}
+
+html[data-publication-view='compact'] .publications.publication-view-enabled {
+  ol.bibliography {
+    li {
+      margin-bottom: 0;
+      padding: 0.8rem 0;
+    }
+
+    li + li {
+      border-top: 1px solid var(--global-divider-color);
+    }
+  }
+
+  .publication-entry {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .publication-aside {
+    display: none !important;
+  }
+
+  .publication-content {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .publication-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.65rem;
+    align-items: start;
+  }
+
+  .publication-venue-compact {
+    display: inline-flex;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    padding-top: 0.08rem;
+  }
+
+  .publication-venue-compact .venue-badge {
+    width: auto !important;
+    min-width: 0;
+    margin: 0;
+    padding: 0.22rem 0.55rem;
+    border: 1px solid color-mix(in srgb, var(--venue-color) 34%, transparent);
+    border-radius: 999px !important;
+    background: color-mix(in srgb, var(--venue-color) 10%, transparent);
+    box-shadow: none !important;
+    font-size: 0.68rem;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.025em;
+    white-space: nowrap;
+  }
+
+  .publication-venue-compact .venue-badge-link,
+  .publication-venue-compact .venue-badge-link:hover {
+    background: transparent !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  html[data-publication-view='compact'] .publications.publication-view-enabled {
+    .publication-heading {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0.25rem;
+    }
+
+    .publication-venue-compact {
+      grid-column: 1;
+      grid-row: 1;
+      justify-self: start;
+      padding-top: 0;
+    }
+
+    .publication-heading .title {
+      grid-column: 1;
+      grid-row: 2;
     }
   }
 }

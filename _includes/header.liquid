@@ -2,16 +2,12 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      <a class="navbar-brand" href="{{ '/' | relative_url }}" aria-label="Deqing Fu — Home">
-        <span class="brand-name">Deqing Fu</span>
-      </a>
       {% if site.enable_font_toggle %}
-        <!-- Keep the cats visible even when the navigation links collapse. -->
-        <a
+        <!-- The typography cat doubles as the navbar brand. -->
+        <button
           id="font-toggle"
-          class="nav-link navbar-font-toggle"
-          role="button"
-          href="#"
+          class="navbar-brand navbar-font-toggle"
+          type="button"
           data-baseurl="{{ site.baseurl }}"
           title="Toggle font family"
           aria-label="Toggle font family"
@@ -19,11 +15,12 @@
           <img
             id="font-toggle-img"
             src="{{ '/assets/img/logo_taro_nav.png' | relative_url }}"
-            width="26"
-            height="26"
-            alt="Taro, the typography toggle cat"
+            width="32"
+            height="32"
+            alt=""
+            aria-hidden="true"
           />
-        </a>
+        </button>
       {% endif %}
       <!-- Navbar Toggle -->
       <button

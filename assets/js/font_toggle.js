@@ -30,10 +30,6 @@
         if (img.getAttribute('src') !== src) {
           img.setAttribute('src', src);
         }
-        img.setAttribute(
-          'alt',
-          pref === 'sans' ? 'Yolk, showing Figtree sans mode' : 'Taro, showing EB Garamond serif mode'
-        );
       }
     }
   }
@@ -58,8 +54,7 @@
     if (!btn) return;
     // Ensure icon is correct after DOM is ready
     applyFont(getPref());
-    btn.addEventListener('click', function (e) {
-      e.preventDefault();
+    btn.addEventListener('click', function () {
       const next = getPref() === 'serif' ? 'sans' : 'serif';
       setPref(next);
     });
