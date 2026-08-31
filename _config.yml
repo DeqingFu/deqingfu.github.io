@@ -438,7 +438,7 @@ enable_progressbar: false # enables a horizontal progress bar linked to the vert
 enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
 
 # Custom UI toggles
-enable_font_toggle: true # switch between EB Garamond and a Gotham-style sans stack
+enable_font_toggle: true # switch between EB Garamond and Figtree
 
 default_theme_setting: light # light | dark | system (controls first-visit default)
 
@@ -491,7 +491,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Figtree:ital,wght@0,400..800;1,400..800&family=UnifrakturMaguntia&family=Fruktur:opsz,wght@12..72,400&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Figtree:ital,wght@0,300..900;1,300..900&family=UnifrakturMaguntia&family=Fruktur:opsz,wght@12..72,400&display=swap"
   highlightjs:
     integrity:
       css:

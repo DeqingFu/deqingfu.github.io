@@ -1,6 +1,21 @@
 <!-- Metadata, OpenGraph and Schema.org -->
 {% include metadata.liquid %}
 
+{% if site.enable_font_toggle %}
+  <!-- Apply the saved font before CSS paints; sans is the default. -->
+  <script>
+    (function () {
+      var pref = null;
+      try {
+        pref = localStorage.getItem('fontPref');
+      } catch (e) {}
+      if (pref !== 'serif') {
+        document.documentElement.classList.add('font-sans');
+      }
+    })();
+  </script>
+{% endif %}
+
 <!-- Bootstrap & MDB -->
 <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
 <link
@@ -23,8 +38,9 @@
 
 <!-- Fonts & Icons -->
 <link defer rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
-  defer
   rel="stylesheet"
   type="text/css"
   href="{{ site.third_party_libraries.google_fonts.url.fonts }}"

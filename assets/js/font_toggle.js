@@ -1,6 +1,21 @@
-// Toggle between serif (EB Garamond) and a Gotham-style sans stack.
+// Toggle between serif (EB Garamond) and sans (Figtree).
 (function () {
   const STORAGE_KEY = 'fontPref'; // 'serif' | 'sans'
+
+  function readStoredPref() {
+    try {
+      const pref = localStorage.getItem(STORAGE_KEY);
+      return pref === 'sans' || pref === 'serif' ? pref : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function writeStoredPref(pref) {
+    try {
+      localStorage.setItem(STORAGE_KEY, pref);
+    } catch (e) {}
+  }
 
   function applyFont(pref) {
     const html = document.documentElement;
@@ -35,13 +50,11 @@
   }
 
   function getPref() {
-    const p = localStorage.getItem(STORAGE_KEY);
-    if (p === 'sans' || p === 'serif') return p;
-    return 'sans';
+    return readStoredPref() || 'sans';
   }
 
   function setPref(p) {
-    localStorage.setItem(STORAGE_KEY, p);
+    writeStoredPref(p);
     applyFont(p);
   }
 

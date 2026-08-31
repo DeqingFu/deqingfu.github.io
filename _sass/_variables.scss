@@ -5,6 +5,10 @@
 
 @use "sass:color";
 
+// Typography
+$serif-font-family: 'EB Garamond', Georgia, 'Times New Roman', Times, serif !default;
+$sans-font-family: 'Figtree', 'Gotham SSm A', 'Gotham SSm B', Gotham, 'Avenir Next', Avenir, sans-serif !default;
+
 // Colors
 $red-color: #ff3636 !default;
 $red-color-dark: #b71c1c !default;
