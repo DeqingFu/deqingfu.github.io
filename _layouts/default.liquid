@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ site.lang }}">
+<html lang="{{ site.lang }}"{% if page.publication_view_toggle %} data-publication-view="compact"{% endif %}>
   <!-- Head -->
   <head>
     {% if page.redirect %}

@@ -1,12 +1,14 @@
 (function () {
   const STORAGE_KEY = 'publicationView';
+  const DEFAULT_VIEW = 'compact';
   const root = document.documentElement;
 
   function readView() {
     try {
-      return localStorage.getItem(STORAGE_KEY) === 'compact' ? 'compact' : 'images';
+      const storedView = localStorage.getItem(STORAGE_KEY);
+      return storedView === 'compact' || storedView === 'images' ? storedView : DEFAULT_VIEW;
     } catch (_) {
-      return 'images';
+      return DEFAULT_VIEW;
     }
   }
 
@@ -29,7 +31,6 @@
   }
 
   const initialView = readView();
-  root.classList.add('publication-view-js');
   root.dataset.publicationView = initialView;
 
   function init() {
@@ -41,6 +42,7 @@
         storeView(nextView);
       });
     });
+    root.classList.add('publication-view-js');
   }
 
   if (document.readyState === 'loading') {
@@ -50,6 +52,8 @@
   }
 
   window.addEventListener('storage', function (event) {
-    if (event.key === STORAGE_KEY) applyView(event.newValue === 'compact' ? 'compact' : 'images');
+    if (event.key === STORAGE_KEY) {
+      applyView(event.newValue === 'compact' || event.newValue === 'images' ? event.newValue : DEFAULT_VIEW);
+    }
   });
 })();
