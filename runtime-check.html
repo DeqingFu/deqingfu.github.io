@@ -1,0 +1,94 @@
+---
+layout: null
+---
+<!doctype html>
+<meta charset="utf-8">
+<pre id="output">pending</pre>
+<iframe id="home" style="display:block;width:390px;height:800px;border:0"></iframe>
+<iframe id="publications" style="display:block;width:390px;height:800px;border:0"></iframe>
+<script>
+  localStorage.removeItem('publicationView');
+  const homeFrame = document.getElementById('home');
+  const publicationsFrame = document.getElementById('publications');
+
+  function overflowReport(frame) {
+    const doc = frame.contentDocument;
+    const viewportWidth = doc.documentElement.clientWidth;
+    return Array.from(doc.body.querySelectorAll('*')).map(function (element) {
+      const rect = element.getBoundingClientRect();
+      return {
+        element: element.tagName.toLowerCase() + (element.id ? '#' + element.id : '') +
+          (element.className && typeof element.className === 'string' ? '.' + element.className.trim().replace(/\s+/g, '.') : ''),
+        left: Math.round(rect.left * 10) / 10,
+        right: Math.round(rect.right * 10) / 10
+      };
+    }).filter(function (item) {
+      return item.left < -1 || item.right > viewportWidth + 1;
+    }).slice(0, 12);
+  }
+
+  function reportWhenReady() {
+    const homeDoc = homeFrame.contentDocument;
+    const pubsDoc = publicationsFrame.contentDocument;
+    if (!homeDoc || !pubsDoc || !homeDoc.querySelector('.research-area summary') || !pubsDoc.querySelector('.publication-action')) {
+      setTimeout(reportWhenReady, 100);
+      return;
+    }
+
+    const homeWin = homeFrame.contentWindow;
+    const pubsWin = publicationsFrame.contentWindow;
+    const summary = homeDoc.querySelector('.research-area summary');
+    const venueTag = homeDoc.querySelector('.research-area .venue-tag');
+    const strong = homeDoc.querySelector('article strong');
+    const fraktur = homeDoc.querySelector('.fraktur-hover');
+    const badge = pubsDoc.querySelector('.publication-venue-compact .venue-badge');
+    const badgeLink = pubsDoc.querySelector('.publication-venue-compact .venue-badge-link');
+    const periodical = pubsDoc.querySelector('.periodical');
+    const author = pubsDoc.querySelector('.author');
+    const action = pubsDoc.querySelector('.publication-action');
+    const secondPaper = pubsDoc.querySelector('ol.bibliography > li + li');
+    const toggle = pubsDoc.querySelector('[data-publication-view-toggle]');
+    const initialView = pubsDoc.documentElement.dataset.publicationView;
+    const initialToggleLabel = toggle.textContent.trim();
+    toggle.click();
+    const clickedView = pubsDoc.documentElement.dataset.publicationView;
+    toggle.click();
+
+    const report = {
+      homeViewport: [homeDoc.documentElement.clientWidth, homeDoc.documentElement.scrollWidth, homeDoc.body.scrollWidth],
+      publicationsViewport: [pubsDoc.documentElement.clientWidth, pubsDoc.documentElement.scrollWidth, pubsDoc.body.scrollWidth],
+      homeOverflow: overflowReport(homeFrame),
+      publicationsOverflow: overflowReport(publicationsFrame),
+      bodyFont: homeWin.getComputedStyle(homeDoc.body).fontFamily,
+      summaryWeight: homeWin.getComputedStyle(summary).fontWeight,
+      venueTagWeight: homeWin.getComputedStyle(venueTag).fontWeight,
+      strongWeight: homeWin.getComputedStyle(strong).fontWeight,
+      frakturOverlayWeight: homeWin.getComputedStyle(fraktur, '::before').fontWeight,
+      badgeCursor: pubsWin.getComputedStyle(badge).cursor,
+      badgeLinkCursor: pubsWin.getComputedStyle(badgeLink).cursor,
+      periodicalSize: pubsWin.getComputedStyle(periodical).fontSize,
+      authorSize: pubsWin.getComputedStyle(author).fontSize,
+      paperDivider: pubsWin.getComputedStyle(secondPaper).borderTopStyle + ' ' + pubsWin.getComputedStyle(secondPaper).borderTopWidth,
+      action: {
+        display: pubsWin.getComputedStyle(action).display,
+        fontSize: pubsWin.getComputedStyle(action).fontSize,
+        fontWeight: pubsWin.getComputedStyle(action).fontWeight,
+        minHeight: pubsWin.getComputedStyle(action).minHeight,
+        borderRadius: pubsWin.getComputedStyle(action).borderRadius,
+        boxShadow: pubsWin.getComputedStyle(action).boxShadow,
+        transform: pubsWin.getComputedStyle(action).transform
+      },
+      publicationView: [initialView, initialToggleLabel, clickedView, pubsDoc.documentElement.dataset.publicationView],
+      toggleAriaPressed: toggle.hasAttribute('aria-pressed'),
+      actionGroups: pubsDoc.querySelectorAll('.publication-actions[role="group"]').length,
+      legacyActions: pubsDoc.querySelectorAll('.publication-actions .btn, .paper-link, .code-link, .hf-link').length
+    };
+
+    localStorage.removeItem('publicationView');
+    document.getElementById('output').textContent = JSON.stringify(report, null, 2);
+  }
+
+  homeFrame.src = '/';
+  publicationsFrame.src = '/publications/';
+  setTimeout(reportWhenReady, 100);
+</script>

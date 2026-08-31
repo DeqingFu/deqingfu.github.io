@@ -22,6 +22,7 @@ strong {
 /* Let bold text inherit parent color (so <span style="color:"> with <strong> keeps the color) */
 strong {
   color: inherit;
+  font-weight: 700;
 }
 
 hr {
@@ -507,7 +508,7 @@ section a,
 }
 
 /* Force hover effects on ANY link that doesn't have specific exclusions */
-a:not(.navbar-brand):not(.nav-link):not(.dropdown-item):hover {
+a:not(.navbar-brand):not(.nav-link):not(.dropdown-item):not(.publication-link):hover {
   transform: translateY(-1px) !important;
   transition: all 0.2s ease !important;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
@@ -559,34 +560,50 @@ a:not(.navbar-brand):not(.nav-link):not(.publication-link):hover {
   transition: all 0.2s ease;
 }
 
-/* Publication link specific hover effects - applied globally */
-.publication-link {
-  border-radius: 4px;
-  padding: 2px 4px;
-  margin: -2px -4px;
-  transition: all 0.3s ease;
-  display: inline-block;
-}
-
-.publication-link:hover {
-  transform: translateY(-1px);
+/* Compact, consistent publication action chips */
+.publications .publication-actions .publication-action {
+  --action-color: var(--global-theme-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1.65rem;
+  margin: 0 !important;
+  padding: 0.2rem 0.58rem !important;
+  border: 1px solid color-mix(in srgb, var(--action-color) 24%, var(--global-divider-color));
+  border-radius: 999px;
+  appearance: none;
+  background: color-mix(in srgb, var(--action-color) 6%, transparent);
+  box-shadow: none !important;
+  color: var(--action-color) !important;
+  cursor: pointer;
+  font-family: $sans-font-family;
+  font-size: 0.76rem;
+  font-weight: 600;
+  line-height: 1.15;
+  text-transform: none;
   text-decoration: none !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: none !important;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease !important;
+  white-space: nowrap;
 }
 
-.paper-link:hover {
-  background-color: rgba(220, 53, 69, 0.1);
-  color: #dc3545 !important;
+.publications .publication-actions .publication-action:hover {
+  border-color: color-mix(in srgb, var(--action-color) 52%, var(--global-divider-color));
+  background: color-mix(in srgb, var(--action-color) 12%, transparent) !important;
+  color: var(--action-color) !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+  transform: none !important;
 }
 
-.code-link:hover {
-  background-color: rgba(51, 51, 51, 0.1);
-  color: #333 !important;
+.publications .publication-actions .publication-action:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--action-color) 48%, transparent);
+  outline-offset: 2px;
 }
 
-.hf-link:hover {
-  background-color: rgba(255, 140, 0, 0.1);
-  color: #ff8c00 !important;
+.publications .publication-actions .publication-action-award {
+  --action-color: var(--global-highlight-color);
+  font-weight: 700;
 }
 
 /* Social media icons with original brand colors */
@@ -900,6 +917,7 @@ footer.fixed-bottom {
   position: absolute;
   inset: 0;
   font-family: 'UnifrakturMaguntia', 'Fruktur', 'EB Garamond', Georgia, 'Times New Roman', serif;
+  font-weight: 400;
   text-transform: lowercase;
   color: var(--fraktur-color); /* use pinned color */
   -webkit-text-fill-color: var(--fraktur-color); /* paint with pinned color even if base text is transparent */
@@ -1181,6 +1199,7 @@ html.publication-view-js .publication-view-toggle {
 
   .venue-badge {
     border-bottom: 0;
+    cursor: default;
     text-decoration: none !important;
     -webkit-text-decoration: none;
   }
@@ -1192,6 +1211,7 @@ html.publication-view-js .publication-view-toggle {
     border: 0 !important;
     background: transparent !important;
     box-shadow: none !important;
+    cursor: pointer;
     text-decoration: none !important;
     transform: none !important;
   }
@@ -1342,23 +1362,11 @@ html.publication-view-js .publication-view-toggle {
       }
 
       .links {
-        a.btn {
-          color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
-          margin-left: 0;
-
-          &:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
-          }
-        }
-        a.award.btn {
-          border-color: var(--global-highlight-color);
-        }
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.35rem;
+        margin-top: 0.35rem;
       }
 
       .badges {
@@ -1430,10 +1438,6 @@ html[data-publication-view='compact'] .publications.publication-view-enabled {
     li {
       margin-bottom: 0;
       padding: 0.8rem 0;
-    }
-
-    li + li {
-      border-top: 1px solid var(--global-divider-color);
     }
   }
 

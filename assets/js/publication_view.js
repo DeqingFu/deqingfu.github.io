@@ -24,7 +24,6 @@
     const compact = view === 'compact';
     root.dataset.publicationView = compact ? 'compact' : 'images';
     document.querySelectorAll('[data-publication-view-toggle]').forEach(function (button) {
-      button.setAttribute('aria-pressed', String(compact));
       const label = button.querySelector('.publication-view-label');
       if (label) label.textContent = compact ? 'Show images' : 'Hide images';
     });

@@ -1,20 +1,34 @@
 $(document).ready(function () {
-  // add toggle functionality to abstract, award and bibtex buttons
-  $("a.abstract").click(function () {
-    $(this).parent().parent().find(".abstract.hidden").toggleClass("open");
-    $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
-  });
-  $("a.award").click(function () {
-    $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".award.hidden").toggleClass("open");
-    $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
-  });
-  $("a.bibtex").click(function () {
-    $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".bibtex.hidden").toggleClass("open");
-  });
+  // Toggle publication disclosures and keep their accessible state in sync.
+  function setDisclosureState(entry, type, expanded) {
+    const panel = entry.children("." + type + ".hidden");
+    const button = entry.find("button." + type + ", a." + type).first();
+
+    panel.toggleClass("open", expanded).attr("aria-hidden", String(!expanded));
+    if (expanded) {
+      panel.removeAttr("inert");
+    } else {
+      panel.attr("inert", "");
+    }
+    button.attr("aria-expanded", String(expanded));
+  }
+
+  function bindDisclosure(selector, type) {
+    $(selector).click(function (event) {
+      event.preventDefault();
+      const entry = $(this).closest(".publication-content");
+      const panel = entry.children("." + type + ".hidden");
+      const shouldOpen = !panel.hasClass("open");
+
+      ["abstract", "award", "bibtex"].forEach(function (panelType) {
+        setDisclosureState(entry, panelType, panelType === type && shouldOpen);
+      });
+    });
+  }
+
+  bindDisclosure("button.abstract, a.abstract", "abstract");
+  bindDisclosure("button.award, a.award", "award");
+  bindDisclosure("a.bibtex", "bibtex");
   $("a").removeClass("waves-effect waves-light");
 
   // bootstrap-toc
