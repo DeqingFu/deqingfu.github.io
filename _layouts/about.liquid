@@ -301,7 +301,7 @@ layout: default
           {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image cache_bust=true %}
           <div class="profile-socials" aria-label="Profile links">
             <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-            <a href="{{ '/assets/pdf/curriculum_vitae_deqing.pdf' | relative_url }}" title="CV" aria-label="CV" target="_blank" rel="noopener"><i class="ai ai-cv"></i></a>
+            <a href="https://www.semanticscholar.org/author/{{ site.semanticscholar_id }}" title="Semantic Scholar" aria-label="Semantic Scholar"><i class="ai ai-semantic-scholar"></i></a>
             <a href="https://github.com/{{ site.github_username }}" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://x.com/{{ site.x_username }}" title="X" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
