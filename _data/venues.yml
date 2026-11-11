@@ -45,3 +45,7 @@
 "Tech Report":
   color: "#5D6D7E" # slate gray
   text_color: "#EAECEE" # light gray for slate bg
+
+"Blog Post":
+  color: "#5D6D7E" # slate gray, same as tech reports
+  text_color: "#EAECEE" # light gray for slate bg

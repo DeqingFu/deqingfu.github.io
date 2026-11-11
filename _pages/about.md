@@ -11,11 +11,12 @@ profile:
   more_info: # blank
 
 news: true # includes a list of news items
+teaching_mentorship: true # includes the teaching and mentorship section from _data/teaching_mentorship.yml
 selected_papers: true # includes a list of papers marked as "selected={true}"
 publication_view_toggle: true
 social: false # includes social icons at the bottom of the page
 ---
-This is **Deqing Fu** and I'm a final-year PhD candidate in Computer Science at the <span style="color:#990000;"><strong>University of Southern California</strong> (USC)</span>. My main research interests are **theoretical foundations of large language models** and **multimodal LLMs**. I'm (co-)advised by [Prof. Vatsal Sharan](https://vatsalsharan.github.io) of [USC Theory Group](https://viterbi-web.usc.edu/~cstheory/) and [Prof. Robin Jia](https://robinjia.github.io) of [Allegro Lab](https://allegro-lab.github.io) within [USC NLP Group](https://nlp.usc.edu), and I'm working closely with [Prof. Mahdi Soltanolkotabi](https://viterbi-web.usc.edu/~soltanol/index.html). During my Ph.D. studies, I spent time at Google and Meta as a student researcher. Before USC, I completed my undergraduate degree in Mathematics (with honors) and my master’s in Statistics at the <span style="color:#800000;"><strong class="fraktur-hover" data-text="University of Chicago">University of Chicago</strong></span>.
+This is **Deqing Fu** and I'm a final-year PhD candidate in Computer Science at the <span style="color:#990000;"><strong>University of Southern California</strong> (USC)</span>. My research studies the **theoretical foundations of large language models** and ways to **interpret, align, and extend them beyond text**. I'm (co-)advised by [Prof. Vatsal Sharan](https://vatsalsharan.github.io) of [USC Theory Group](https://viterbi-web.usc.edu/~cstheory/) and [Prof. Robin Jia](https://robinjia.github.io) of [Allegro Lab](https://allegro-lab.github.io) within [USC NLP Group](https://nlp.usc.edu), and I'm working closely with [Prof. Mahdi Soltanolkotabi](https://viterbi-web.usc.edu/~soltanol/index.html). I'm currently a student researcher at Google Research, and I previously interned with the Llama team at Meta and visited the Simons Institute at UC Berkeley. Before USC, I completed my undergraduate degree in Mathematics (with honors) and my master’s in Statistics at the <span style="color:#800000;"><strong class="fraktur-hover" data-text="University of Chicago">University of Chicago</strong></span>.
 
 <div class="job-market-banner liquid-card">
 <p class="card-label">Availability</p>
@@ -51,6 +52,8 @@ This is **Deqing Fu** and I'm a final-year PhD candidate in Computer Science at 
 (<a class="venue-tag" href="https://arxiv.org/abs/2505.14071">ACL 2026</a>), and for efficient
 and privacy-preserving synthetic data generation
 (<a class="venue-tag" href="https://arxiv.org/abs/2602.21218">ICML 2026</a>)</li>
+<li>Faithful generation under distribution shift via token-level rewards
+(<a class="venue-tag" href="https://arxiv.org/abs/2607.17524">COLM 2026</a>)</li>
 <li>Mechanistic interpretability via SAEs and transcoders
 (<a class="venue-tag" href="https://arxiv.org/abs/2506.09967">COLM 2026</a>,
 <a class="venue-tag" href="https://qwen3.bluelightai.com">Tech Report</a>)</li>
@@ -58,7 +61,7 @@ and privacy-preserving synthetic data generation
 </details>
 
 <details class="research-area">
-<summary>Multimodal Models and Applications</summary>
+<summary>Foundation Models Beyond Text</summary>
 <ul>
 <li>Multimodal rewards for improving generation quality: token-level hallucination reduction
 (<a class="venue-tag" href="https://arxiv.org/abs/2410.04734">ICLR 2025</a>) and text-to-image alignment
@@ -67,6 +70,9 @@ and privacy-preserving synthetic data generation
 (<a class="venue-tag" href="https://arxiv.org/abs/2404.01266">COLM 2024</a>)</li>
 <li>Large-scale dataset for visual reasoning with images
 (<a class="venue-tag" href="https://arxiv.org/abs/2507.16746">ICLR 2026</a>)</li>
+<li>Zero-shot tabular foundation models and self-evolving agentic pipelines built on them
+(<a class="venue-tag" href="https://arxiv.org/abs/2609.37959">Tech Report</a>,
+<a class="venue-tag" href="https://arxiv.org/abs/2609.37989">Preprint</a>)</li>
 </ul>
 </details>
 

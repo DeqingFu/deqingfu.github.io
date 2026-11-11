@@ -15,20 +15,10 @@
       <a
         class="venue-badge-link"
         href="{{ venue.url }}"
-        {% if include.compact %}
-          style="color: {{ venue_bg }} !important;"
-        {% else %}
-          style="color: {{ venue_text }} !important;"
-        {% endif %}
+        style="color: {{ venue_text }} !important;"
       >{{ include.abbr }}</a>
     {% else %}
-      <span
-        {% if include.compact %}
-          style="color: {{ venue_bg }};"
-        {% else %}
-          style="color: {{ venue_text }};"
-        {% endif %}
-      >{{- include.abbr -}}</span>
+      <span style="color: {{ venue_text }};">{{- include.abbr -}}</span>
     {% endif %}
   </abbr>
 {% endif %}

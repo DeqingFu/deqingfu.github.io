@@ -1,0 +1,68 @@
+# Shown in the "Teaching and Mentorship" section at the end of the homepage
+# (turned on by `teaching_mentorship: true` in _pages/about.md).
+
+teaching:
+  - title: Introduction to Machine Learning
+    code: CSCI 467
+    role: Teaching Assistant
+    school: USC
+    when: Spring 2025
+  - title: Deep Learning and its Applications
+    code: CSCI 566
+    role: Teaching Assistant
+    school: USC
+    when: Spring 2023
+  - title: Statistical Insight
+    code: BUSN 41301
+    role: Teaching Assistant
+    school: UChicago Booth
+    when: Fall 2021
+  - title: Fundamentals of Deep Learning
+    code: CMSC 31230
+    role: Course Assistant
+    school: UChicago
+    when: Fall 2021
+  - title: "Analysis in R<sup>n</sup>&nbsp;I"
+    code: MATH 20300
+    role: Course Assistant
+    school: UChicago
+    when: Spring 2018
+
+# `url` (optional) links the name: personal website for Ph.D. students, LinkedIn otherwise.
+# `now` (optional) is where the student went next.
+mentorship:
+  - name: Zitong Cynthia Huang
+    url: https://zitonghuangcynthia.github.io/
+    program: USC undergraduate
+    when: 2025–2026
+    now: ECE Ph.D., USC
+  - name: Qilin Ye
+    url: https://yql-skorpion.github.io/
+    program: USC undergraduate
+    when: 2023–2026
+    now: CS Ph.D., Stanford
+  - name: Woody Haosheng Gan
+    url: https://woodygan.github.io/
+    program: USC undergraduate
+    when: 2023–2026
+    now: CS Ph.D., Georgia Tech
+  - name: You-Qi Huang
+    url: https://www.linkedin.com/in/youqihuang/
+    program: USC undergraduate
+    when: 2023–2024
+  - name: Sophia Mirrashidi
+    url: https://www.linkedin.com/in/sophiamirrashidi/
+    program: USC master's student
+    when: 2026–present
+  - name: Gustavo Lucas Carvalho
+    url: https://www.linkedin.com/in/gustavo-lucas-carvalho/
+    program: USC master's student
+    when: 2025–2026
+  - name: Elliot Kau
+    url: https://www.linkedin.com/in/elliott-kau/
+    program: USC master's student
+    when: 2023–2024
+  - name: Tian-Qi Chen
+    url: https://www.linkedin.com/in/tianqi-chen-27a722227/
+    program: USC master's student
+    when: 2023
